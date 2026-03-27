@@ -1,0 +1,10 @@
+{
+  "sourceUrl": "https://github.com/vectorize-io/hindsight",
+  "branch": "main",
+  "docusaurusRoot": "hindsight-docs",
+  "configFile": "hindsight-docs/docusaurus.config.ts",
+  "translateCommand": "npx docusaurus write-translations",
+  "buildCommand": "npm run build",
+  "buildOutput": "build",
+  "packageManager": "npm"
+}
