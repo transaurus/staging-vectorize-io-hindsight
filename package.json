@@ -1,0 +1,34 @@
+{
+  "name": "hindsight",
+  "private": true,
+  "workspaces": [
+    "hindsight-clients/typescript",
+    "hindsight-control-plane",
+    "hindsight-docs"
+  ],
+  "scripts": {
+    "prepare": "./scripts/setup-hooks.sh"
+  },
+  "overrides": {
+    "qs": "^6.14.2",
+    "fast-xml-parser": ">=5.5.6",
+    "serialize-javascript": "^7.0.3",
+    "minimatch": "^3.1.4",
+    "undici": ">=7.24.0",
+    "flatted": ">=3.4.2",
+    "picomatch": ">=2.3.2 <3.0.0 || >=4.0.4",
+    "yaml": ">=1.10.3",
+    "svgo": ">=3.3.3",
+    "dompurify": ">=3.3.2",
+    "@redocly/openapi-core": {
+      "minimatch": "^5.1.8"
+    },
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "^9.0.7"
+    },
+    "ajv": "^6.14.0",
+    "ajv-formats": {
+      "ajv": "^8.18.0"
+    }
+  }
+}

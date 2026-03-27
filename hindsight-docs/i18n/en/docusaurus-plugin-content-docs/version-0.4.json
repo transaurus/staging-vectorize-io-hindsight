@@ -1,0 +1,262 @@
+{
+  "version.label": {
+    "message": "0.4",
+    "description": "The label for version 0.4"
+  },
+  "sidebar.developerSidebar.category.Architecture": {
+    "message": "Architecture",
+    "description": "The label for category 'Architecture' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.category.API": {
+    "message": "API",
+    "description": "The label for category 'API' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.category.Clients": {
+    "message": "Clients",
+    "description": "The label for category 'Clients' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.category.Integrations": {
+    "message": "Integrations",
+    "description": "The label for category 'Integrations' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.category.Hosting": {
+    "message": "Hosting",
+    "description": "The label for category 'Hosting' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.category.Resources": {
+    "message": "Resources",
+    "description": "The label for category 'Resources' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.category.More": {
+    "message": "More",
+    "description": "The label for category 'More' in sidebar 'developerSidebar'"
+  },
+  "sidebar.developerSidebar.link.API Reference": {
+    "message": "API Reference",
+    "description": "The label for link 'API Reference' in sidebar 'developerSidebar', linking to '/api-reference'"
+  },
+  "sidebar.developerSidebar.link.Cloud": {
+    "message": "Cloud",
+    "description": "The label for link 'Cloud' in sidebar 'developerSidebar', linking to 'https://ui.hindsight.vectorize.io/signup'"
+  },
+  "sidebar.developerSidebar.link.Best Practices": {
+    "message": "Best Practices",
+    "description": "The label for link 'Best Practices' in sidebar 'developerSidebar', linking to '/best-practices'"
+  },
+  "sidebar.developerSidebar.link.FAQ": {
+    "message": "FAQ",
+    "description": "The label for link 'FAQ' in sidebar 'developerSidebar', linking to '/faq'"
+  },
+  "sidebar.developerSidebar.link.Cookbook": {
+    "message": "Cookbook",
+    "description": "The label for link 'Cookbook' in sidebar 'developerSidebar', linking to '/cookbook'"
+  },
+  "sidebar.developerSidebar.link.Blog": {
+    "message": "Blog",
+    "description": "The label for link 'Blog' in sidebar 'developerSidebar', linking to '/blog'"
+  },
+  "sidebar.developerSidebar.link.Community": {
+    "message": "Community",
+    "description": "The label for link 'Community' in sidebar 'developerSidebar', linking to 'https://join.slack.com/t/hindsight-space/shared_invite/zt-3nhbm4w29-LeSJ5Ixi6j8PdiYOCPlOgg'"
+  },
+  "sidebar.developerSidebar.link.GitHub": {
+    "message": "GitHub",
+    "description": "The label for link 'GitHub' in sidebar 'developerSidebar', linking to 'https://github.com/vectorize-io/hindsight'"
+  },
+  "sidebar.developerSidebar.link.Benchmarks": {
+    "message": "Benchmarks",
+    "description": "The label for link 'Benchmarks' in sidebar 'developerSidebar', linking to 'https://benchmarks.hindsight.vectorize.io/'"
+  },
+  "sidebar.developerSidebar.link.Which Model Should I Use?": {
+    "message": "Which Model Should I Use?",
+    "description": "The label for link 'Which Model Should I Use?' in sidebar 'developerSidebar', linking to 'https://benchmarks.hindsight.vectorize.io/'"
+  },
+  "sidebar.developerSidebar.link.Paper": {
+    "message": "Paper",
+    "description": "The label for link 'Paper' in sidebar 'developerSidebar', linking to 'https://arxiv.org/abs/2512.12818'"
+  },
+  "sidebar.developerSidebar.doc.Overview": {
+    "message": "Overview",
+    "description": "The label for the doc item 'Overview' in sidebar 'developerSidebar', linking to the doc developer/index"
+  },
+  "sidebar.developerSidebar.doc.architectureRetain": {
+    "message": "Retain",
+    "description": "The label for the doc item 'Retain' in sidebar 'developerSidebar', linking to the doc developer/retain"
+  },
+  "sidebar.developerSidebar.doc.architectureRecall": {
+    "message": "Recall",
+    "description": "The label for the doc item 'Recall' in sidebar 'developerSidebar', linking to the doc developer/retrieval"
+  },
+  "sidebar.developerSidebar.doc.architectureReflect": {
+    "message": "Reflect",
+    "description": "The label for the doc item 'Reflect' in sidebar 'developerSidebar', linking to the doc developer/reflect"
+  },
+  "sidebar.developerSidebar.doc.Observations": {
+    "message": "Observations",
+    "description": "The label for the doc item 'Observations' in sidebar 'developerSidebar', linking to the doc developer/observations"
+  },
+  "sidebar.developerSidebar.doc.Multilingual": {
+    "message": "Multilingual",
+    "description": "The label for the doc item 'Multilingual' in sidebar 'developerSidebar', linking to the doc developer/multilingual"
+  },
+  "sidebar.developerSidebar.doc.Performance": {
+    "message": "Performance",
+    "description": "The label for the doc item 'Performance' in sidebar 'developerSidebar', linking to the doc developer/performance"
+  },
+  "sidebar.developerSidebar.doc.Storage": {
+    "message": "Storage",
+    "description": "The label for the doc item 'Storage' in sidebar 'developerSidebar', linking to the doc developer/storage"
+  },
+  "sidebar.developerSidebar.doc.RAG vs Memory": {
+    "message": "RAG vs Memory",
+    "description": "The label for the doc item 'RAG vs Memory' in sidebar 'developerSidebar', linking to the doc developer/rag-vs-hindsight"
+  },
+  "sidebar.developerSidebar.doc.Quick Start": {
+    "message": "Quick Start",
+    "description": "The label for the doc item 'Quick Start' in sidebar 'developerSidebar', linking to the doc developer/api/quickstart"
+  },
+  "sidebar.developerSidebar.doc.apiRetain": {
+    "message": "Retain",
+    "description": "The label for the doc item 'Retain' in sidebar 'developerSidebar', linking to the doc developer/api/retain"
+  },
+  "sidebar.developerSidebar.doc.apiRecall": {
+    "message": "Recall",
+    "description": "The label for the doc item 'Recall' in sidebar 'developerSidebar', linking to the doc developer/api/recall"
+  },
+  "sidebar.developerSidebar.doc.apiReflect": {
+    "message": "Reflect",
+    "description": "The label for the doc item 'Reflect' in sidebar 'developerSidebar', linking to the doc developer/api/reflect"
+  },
+  "sidebar.developerSidebar.doc.Mental Models": {
+    "message": "Mental Models",
+    "description": "The label for the doc item 'Mental Models' in sidebar 'developerSidebar', linking to the doc developer/api/mental-models"
+  },
+  "sidebar.developerSidebar.doc.Memory Banks": {
+    "message": "Memory Banks",
+    "description": "The label for the doc item 'Memory Banks' in sidebar 'developerSidebar', linking to the doc developer/api/memory-banks"
+  },
+  "sidebar.developerSidebar.doc.Documents": {
+    "message": "Documents",
+    "description": "The label for the doc item 'Documents' in sidebar 'developerSidebar', linking to the doc developer/api/documents"
+  },
+  "sidebar.developerSidebar.doc.Operations": {
+    "message": "Operations",
+    "description": "The label for the doc item 'Operations' in sidebar 'developerSidebar', linking to the doc developer/api/operations"
+  },
+  "sidebar.developerSidebar.doc.Webhooks": {
+    "message": "Webhooks",
+    "description": "The label for the doc item 'Webhooks' in sidebar 'developerSidebar', linking to the doc developer/api/webhooks"
+  },
+  "sidebar.developerSidebar.doc.Python": {
+    "message": "Python",
+    "description": "The label for the doc item 'Python' in sidebar 'developerSidebar', linking to the doc sdks/python"
+  },
+  "sidebar.developerSidebar.doc.TypeScript": {
+    "message": "TypeScript",
+    "description": "The label for the doc item 'TypeScript' in sidebar 'developerSidebar', linking to the doc sdks/nodejs"
+  },
+  "sidebar.developerSidebar.doc.Go": {
+    "message": "Go",
+    "description": "The label for the doc item 'Go' in sidebar 'developerSidebar', linking to the doc sdks/go"
+  },
+  "sidebar.developerSidebar.doc.CLI": {
+    "message": "CLI",
+    "description": "The label for the doc item 'CLI' in sidebar 'developerSidebar', linking to the doc sdks/cli"
+  },
+  "sidebar.developerSidebar.doc.Embedded Python": {
+    "message": "Embedded Python",
+    "description": "The label for the doc item 'Embedded Python' in sidebar 'developerSidebar', linking to the doc sdks/embed"
+  },
+  "sidebar.developerSidebar.doc.Local MCP Server": {
+    "message": "Local MCP Server",
+    "description": "The label for the doc item 'Local MCP Server' in sidebar 'developerSidebar', linking to the doc sdks/integrations/local-mcp"
+  },
+  "sidebar.developerSidebar.doc.LiteLLM": {
+    "message": "LiteLLM",
+    "description": "The label for the doc item 'LiteLLM' in sidebar 'developerSidebar', linking to the doc sdks/integrations/litellm"
+  },
+  "sidebar.developerSidebar.doc.Claude Code": {
+    "message": "Claude Code",
+    "description": "The label for the doc item 'Claude Code' in sidebar 'developerSidebar', linking to the doc sdks/integrations/claude-code"
+  },
+  "sidebar.developerSidebar.doc.OpenClaw": {
+    "message": "OpenClaw",
+    "description": "The label for the doc item 'OpenClaw' in sidebar 'developerSidebar', linking to the doc sdks/integrations/openclaw"
+  },
+  "sidebar.developerSidebar.doc.Vercel AI SDK": {
+    "message": "Vercel AI SDK",
+    "description": "The label for the doc item 'Vercel AI SDK' in sidebar 'developerSidebar', linking to the doc sdks/integrations/ai-sdk"
+  },
+  "sidebar.developerSidebar.doc.Vercel Chat SDK": {
+    "message": "Vercel Chat SDK",
+    "description": "The label for the doc item 'Vercel Chat SDK' in sidebar 'developerSidebar', linking to the doc sdks/integrations/chat"
+  },
+  "sidebar.developerSidebar.doc.CrewAI": {
+    "message": "CrewAI",
+    "description": "The label for the doc item 'CrewAI' in sidebar 'developerSidebar', linking to the doc sdks/integrations/crewai"
+  },
+  "sidebar.developerSidebar.doc.Pydantic AI": {
+    "message": "Pydantic AI",
+    "description": "The label for the doc item 'Pydantic AI' in sidebar 'developerSidebar', linking to the doc sdks/integrations/pydantic-ai"
+  },
+  "sidebar.developerSidebar.doc.Agno": {
+    "message": "Agno",
+    "description": "The label for the doc item 'Agno' in sidebar 'developerSidebar', linking to the doc sdks/integrations/agno"
+  },
+  "sidebar.developerSidebar.doc.Hermes Agent": {
+    "message": "Hermes Agent",
+    "description": "The label for the doc item 'Hermes Agent' in sidebar 'developerSidebar', linking to the doc sdks/integrations/hermes"
+  },
+  "sidebar.developerSidebar.doc.LangGraph / LangChain": {
+    "message": "LangGraph / LangChain",
+    "description": "The label for the doc item 'LangGraph / LangChain' in sidebar 'developerSidebar', linking to the doc sdks/integrations/langgraph"
+  },
+  "sidebar.developerSidebar.doc.NemoClaw": {
+    "message": "NemoClaw",
+    "description": "The label for the doc item 'NemoClaw' in sidebar 'developerSidebar', linking to the doc sdks/integrations/nemoclaw"
+  },
+  "sidebar.developerSidebar.doc.Strands Agents": {
+    "message": "Strands Agents",
+    "description": "The label for the doc item 'Strands Agents' in sidebar 'developerSidebar', linking to the doc sdks/integrations/strands"
+  },
+  "sidebar.developerSidebar.doc.AG2": {
+    "message": "AG2",
+    "description": "The label for the doc item 'AG2' in sidebar 'developerSidebar', linking to the doc sdks/integrations/ag2"
+  },
+  "sidebar.developerSidebar.doc.Skills": {
+    "message": "Skills",
+    "description": "The label for the doc item 'Skills' in sidebar 'developerSidebar', linking to the doc sdks/integrations/skills"
+  },
+  "sidebar.developerSidebar.doc.Installation": {
+    "message": "Installation",
+    "description": "The label for the doc item 'Installation' in sidebar 'developerSidebar', linking to the doc developer/installation"
+  },
+  "sidebar.developerSidebar.doc.Services": {
+    "message": "Services",
+    "description": "The label for the doc item 'Services' in sidebar 'developerSidebar', linking to the doc developer/services"
+  },
+  "sidebar.developerSidebar.doc.Configuration": {
+    "message": "Configuration",
+    "description": "The label for the doc item 'Configuration' in sidebar 'developerSidebar', linking to the doc developer/configuration"
+  },
+  "sidebar.developerSidebar.doc.Admin CLI": {
+    "message": "Admin CLI",
+    "description": "The label for the doc item 'Admin CLI' in sidebar 'developerSidebar', linking to the doc developer/admin-cli"
+  },
+  "sidebar.developerSidebar.doc.Extensions": {
+    "message": "Extensions",
+    "description": "The label for the doc item 'Extensions' in sidebar 'developerSidebar', linking to the doc developer/extensions"
+  },
+  "sidebar.developerSidebar.doc.Models": {
+    "message": "Models",
+    "description": "The label for the doc item 'Models' in sidebar 'developerSidebar', linking to the doc developer/models"
+  },
+  "sidebar.developerSidebar.doc.Monitoring": {
+    "message": "Monitoring",
+    "description": "The label for the doc item 'Monitoring' in sidebar 'developerSidebar', linking to the doc developer/monitoring"
+  },
+  "sidebar.developerSidebar.doc.MCP Server": {
+    "message": "MCP Server",
+    "description": "The label for the doc item 'MCP Server' in sidebar 'developerSidebar', linking to the doc developer/mcp-server"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentation",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Resources": {
+    "message": "Resources",
+    "description": "The title of the footer links column with title=Resources in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.item.label.Introduction": {
+    "message": "Introduction",
+    "description": "The label of footer link with label=Introduction linking to /"
+  },
+  "link.item.label.Developer Guide": {
+    "message": "Developer Guide",
+    "description": "The label of footer link with label=Developer Guide linking to /developer/installation"
+  },
+  "link.item.label.Clients & Integrations": {
+    "message": "Clients & Integrations",
+    "description": "The label of footer link with label=Clients & Integrations linking to /sdks/python"
+  },
+  "link.item.label.API Reference": {
+    "message": "API Reference",
+    "description": "The label of footer link with label=API Reference linking to /api-reference/"
+  },
+  "link.item.label.Cookbook": {
+    "message": "Cookbook",
+    "description": "The label of footer link with label=Cookbook linking to /cookbook"
+  },
+  "link.item.label.Changelog": {
+    "message": "Changelog",
+    "description": "The label of footer link with label=Changelog linking to /changelog"
+  },
+  "link.item.label.Hindsight Cloud": {
+    "message": "Hindsight Cloud",
+    "description": "The label of footer link with label=Hindsight Cloud linking to https://ui.hindsight.vectorize.io/signup"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/vectorize-io/hindsight"
+  },
+  "link.item.label.Slack": {
+    "message": "Slack",
+    "description": "The label of footer link with label=Slack linking to https://join.slack.com/t/hindsight-space/shared_invite/zt-3nhbm4w29-LeSJ5Ixi6j8PdiYOCPlOgg"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 Vectorize, Inc.",
+    "description": "The footer copyright"
+  }
+}
