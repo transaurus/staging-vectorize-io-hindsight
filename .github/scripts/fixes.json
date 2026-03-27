@@ -1,0 +1,43 @@
+{
+  "description": "Repository-specific fixes for vectorize-io/hindsight",
+  "fixes": {
+    "hindsight-docs/sidebars.ts": [
+      {
+        "type": "replace",
+        "find": "          id: 'developer/retain',\n          label: 'Retain',",
+        "replace": "          id: 'developer/retain',\n          label: 'Retain',\n          key: 'architectureRetain',",
+        "comment": "Add unique key to avoid duplicate translation key conflict with developer/api/retain (both have label 'Retain')"
+      },
+      {
+        "type": "replace",
+        "find": "          id: 'developer/retrieval',\n          label: 'Recall',",
+        "replace": "          id: 'developer/retrieval',\n          label: 'Recall',\n          key: 'architectureRecall',",
+        "comment": "Add unique key to avoid duplicate translation key conflict with developer/api/recall (both have label 'Recall')"
+      },
+      {
+        "type": "replace",
+        "find": "          id: 'developer/reflect',\n          label: 'Reflect',\n          customProps: { icon: 'lu-message' },",
+        "replace": "          id: 'developer/reflect',\n          label: 'Reflect',\n          key: 'architectureReflect',\n          customProps: { icon: 'lu-message' },",
+        "comment": "Add unique key to avoid duplicate translation key conflict with developer/api/reflect (both have label 'Reflect')"
+      },
+      {
+        "type": "replace",
+        "find": "          id: 'developer/api/retain',\n          label: 'Retain',",
+        "replace": "          id: 'developer/api/retain',\n          label: 'Retain',\n          key: 'apiRetain',",
+        "comment": "Add unique key to avoid duplicate translation key conflict with developer/retain (both have label 'Retain')"
+      },
+      {
+        "type": "replace",
+        "find": "          id: 'developer/api/recall',\n          label: 'Recall',",
+        "replace": "          id: 'developer/api/recall',\n          label: 'Recall',\n          key: 'apiRecall',",
+        "comment": "Add unique key to avoid duplicate translation key conflict with developer/retrieval (both have label 'Recall')"
+      },
+      {
+        "type": "replace",
+        "find": "          id: 'developer/api/reflect',\n          label: 'Reflect',",
+        "replace": "          id: 'developer/api/reflect',\n          label: 'Reflect',\n          key: 'apiReflect',",
+        "comment": "Add unique key to avoid duplicate translation key conflict with developer/reflect (both have label 'Reflect')"
+      }
+    ]
+  }
+}
