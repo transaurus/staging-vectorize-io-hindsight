@@ -1,0 +1,66 @@
+{
+  "logo.alt": {
+    "message": "Hindsight Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Developer": {
+    "message": "Developer",
+    "description": "Navbar item with label Developer"
+  },
+  "item.label.Integrations": {
+    "message": "Integrations",
+    "description": "Navbar item with label Integrations"
+  },
+  "item.label.Changelog": {
+    "message": "Changelog",
+    "description": "Navbar item with label Changelog"
+  },
+  "item.label.Resources": {
+    "message": "Resources",
+    "description": "Navbar item with label Resources"
+  },
+  "item.label.Cloud": {
+    "message": "Cloud",
+    "description": "Navbar item with label Cloud"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Best Practices": {
+    "message": "Best Practices",
+    "description": "Navbar item with label Best Practices"
+  },
+  "item.label.FAQ": {
+    "message": "FAQ",
+    "description": "Navbar item with label FAQ"
+  },
+  "item.label.Cookbook": {
+    "message": "Cookbook",
+    "description": "Navbar item with label Cookbook"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.API Reference": {
+    "message": "API Reference",
+    "description": "Navbar item with label API Reference"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Benchmarks": {
+    "message": "Benchmarks",
+    "description": "Navbar item with label Benchmarks"
+  },
+  "item.label.Which Model Should I Use?": {
+    "message": "Which Model Should I Use?",
+    "description": "Navbar item with label Which Model Should I Use?"
+  },
+  "item.label.Paper": {
+    "message": "Paper",
+    "description": "Navbar item with label Paper"
+  }
+}

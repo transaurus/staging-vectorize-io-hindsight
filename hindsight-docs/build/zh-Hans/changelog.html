@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="zh-Hans" dir="ltr" class="mdx-wrapper mdx-page plugin-pages plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Hindsight</title><meta data-rh="true" property="og:title" content="Hindsight"><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://hindsight.vectorize.io/zh-Hans/img/logo.png"><meta data-rh="true" name="twitter:image" content="https://hindsight.vectorize.io/zh-Hans/img/logo.png"><meta data-rh="true" property="og:url" content="https://hindsight.vectorize.io/zh-Hans/changelog"><meta data-rh="true" property="og:locale" content="zh_Hans"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="zh-Hans"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="zh-Hans"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" name="description" content="0.4.20"><meta data-rh="true" property="og:description" content="0.4.20"><link data-rh="true" rel="icon" href="/zh-Hans/img/favicon.png"><link data-rh="true" rel="canonical" href="https://hindsight.vectorize.io/zh-Hans/changelog"><link data-rh="true" rel="alternate" href="https://hindsight.vectorize.io/changelog" hreflang="en"><link data-rh="true" rel="alternate" href="https://hindsight.vectorize.io/zh-Hans/changelog" hreflang="zh-Hans"><link data-rh="true" rel="alternate" href="https://hindsight.vectorize.io/changelog" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/zh-Hans/blog/rss.xml" title="Hindsight RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/zh-Hans/blog/atom.xml" title="Hindsight Atom Feed">
+
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" media="print" onload="this.media=&#39;all&#39;"><link rel="stylesheet" href="/zh-Hans/assets/css/styles.5c356a0f.css">
+<script src="/zh-Hans/assets/js/runtime~main.9cdb9085.js" defer="defer"></script>
+<script src="/zh-Hans/assets/js/main.5ca0acd4.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/zh-Hans/img/logo.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_oPtH" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="theme-announcement-bar announcementBar_zJRd" style="background-color:#0074d9;color:#ffffff" role="banner"><div class="content_bSb_ announcementBarContent_t7IR">Hindsight is State-of-the-Art on Memory for AI Agents | <a href="https://arxiv.org/abs/2512.12818" target="_blank">Read the paper →</a></div></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/zh-Hans/"><div class="navbar__logo"><img src="/zh-Hans/img/logo.png" alt="Hindsight Logo" class="themedComponent_siVc themedComponent--light_hHel" style="height:32px"><img src="/zh-Hans/img/logo.png" alt="Hindsight Logo" class="themedComponent_siVc themedComponent--dark_yETr" style="height:32px"></div></a><a class="navbar__item navbar__link navbar-item-developer" href="/zh-Hans/">Developer</a><a class="navbar__item navbar__link navbar-item-integrations" href="/zh-Hans/integrations">Integrations</a><a aria-current="page" class="navbar__item navbar__link navbar-item-changelog navbar__link--active" href="/zh-Hans/changelog">Changelog</a><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link navbar-item-resources">Resources</a><ul class="dropdown__menu"><li><a class="dropdown__link" customprops="[object Object]" href="/zh-Hans/best-practices"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path></svg>Best Practices</span></a></li><li><a class="dropdown__link" customprops="[object Object]" href="/zh-Hans/faq"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>FAQ</span></a></li><li><a class="dropdown__link" customprops="[object Object]" href="/zh-Hans/cookbook"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path></svg>Cookbook</span></a></li><li><a class="dropdown__link" customprops="[object Object]" href="/zh-Hans/blog"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>Blog</span></a></li><li><a class="dropdown__link" customprops="[object Object]" href="/zh-Hans/api-reference"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M12 7v14"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path></svg>API Reference</span></a></li><li><a href="https://join.slack.com/t/hindsight-space/shared_invite/zt-3nhbm4w29-LeSJ5Ixi6j8PdiYOCPlOgg" target="_blank" rel="noopener noreferrer" class="dropdown__link" customprops="[object Object]"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"></path></svg>Community<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.45" height="11" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://benchmarks.hindsight.vectorize.io/" target="_blank" rel="noopener noreferrer" class="dropdown__link" customprops="[object Object]"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M3 3v16a2 2 0 0 0 2 2h16"></path><path d="M7 16h8"></path><path d="M7 11h12"></path><path d="M7 6h3"></path></svg>Benchmarks<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.45" height="11" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://benchmarks.hindsight.vectorize.io/" target="_blank" rel="noopener noreferrer" class="dropdown__link" customprops="[object Object]"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><rect width="16" height="16" x="4" y="4" rx="2"></rect><rect width="6" height="6" x="9" y="9" rx="1"></rect><path d="M15 2v2"></path><path d="M15 20v2"></path><path d="M2 15h2"></path><path d="M2 9h2"></path><path d="M20 15h2"></path><path d="M20 9h2"></path><path d="M9 2v2"></path><path d="M9 20v2"></path></svg>Which Model Should I Use?<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.45" height="11" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li><li><a href="https://arxiv.org/abs/2512.12818" target="_blank" rel="noopener noreferrer" class="dropdown__link" customprops="[object Object]"><span style="display:inline-flex;align-items:center;gap:5px"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.8" height="14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>Paper<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.45" height="11" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><svg width="12" height="12" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a aria-current="page" class="navbar__link navbar-item-version active" aria-haspopup="true" aria-expanded="false" role="button" href="/zh-Hans/">0.4</a><ul class="dropdown__menu"><li><a aria-current="page" class="dropdown__link dropdown__link--active" href="/zh-Hans/">0.4</a></li><li><a class="dropdown__link" href="/zh-Hans/0.3">0.3</a></li></ul></div><a href="https://ui.hindsight.vectorize.io/signup" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link navbar-item-cloud"><span style="display:inline-flex;align-items:center;gap:5px">Cloud<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;opacity:0.45" height="11" width="11" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></span><svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a><a href="https://github.com/vectorize-io/hindsight" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link"><svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" style="display:block" height="18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg><svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_ki11 colorModeToggle_x44X"><button class="clean-btn toggleButton_MMFG toggleButtonDisabled_Uw7m" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_k9hJ lightToggleIcon_lgto"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_k9hJ darkToggleIcon_U96C"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_k9hJ systemToggleIcon_E5c0"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_dCNk"><div class="navbar__search searchBarContainer_bpSG" dir="ltr"><input placeholder="Search" aria-label="Search" class="navbar__search-input searchInput_T5pz" value=""><div class="loadingRing_hScY searchBarLoadingRing_dMau"><div></div><div></div><div></div><div></div></div></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_MB5r"><main class="container container--fluid margin-vert--lg"><div class="row mdxPageWrapper_sagS"><div class="col"><article><div class="hero__CSh"><h1 class="title_hy4w">Changelog</h1><p class="subtitle_sRx7">User-facing changes only. Internal maintenance and infrastructure updates are omitted.</p></div>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0420"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.20" target="_blank" rel="noopener noreferrer" class="">0.4.20</a><a href="#0420" class="hash-link" aria-label="Direct link to 0420" title="Direct link to 0420" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add a one-command setup CLI package for the NemoClaw integration. (<a href="https://github.com/vectorize-io/hindsight/commit/d284de28" target="_blank" rel="noopener noreferrer" class=""><code>d284de28</code></a>)</li>
+<li class="">Add a LangGraph integration for using Hindsight memory within LangGraph agents. (<a href="https://github.com/vectorize-io/hindsight/commit/b4320254" target="_blank" rel="noopener noreferrer" class=""><code>b4320254</code></a>)</li>
+<li class="">Add reflect filters to exclude specific fact types and mental model content during reflection. (<a href="https://github.com/vectorize-io/hindsight/commit/ea662d06" target="_blank" rel="noopener noreferrer" class=""><code>ea662d06</code></a>)</li>
+<li class="">Introduce independent versioning for integrations so they can be released separately from the core server. (<a href="https://github.com/vectorize-io/hindsight/commit/31f1c53c" target="_blank" rel="noopener noreferrer" class=""><code>31f1c53c</code></a>)</li>
+<li class="">Add a Claude Code integration plugin. (<a href="https://github.com/vectorize-io/hindsight/commit/f4390bdc" target="_blank" rel="noopener noreferrer" class=""><code>f4390bdc</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Add a wall-clock timeout to reflect operations so they don’t run indefinitely. (<a href="https://github.com/vectorize-io/hindsight/commit/8ce06e3e" target="_blank" rel="noopener noreferrer" class=""><code>8ce06e3e</code></a>)</li>
+<li class="">Provide richer context when validating operations via the OperationValidator extension. (<a href="https://github.com/vectorize-io/hindsight/commit/2eb1019d" target="_blank" rel="noopener noreferrer" class=""><code>2eb1019d</code></a>)</li>
+<li class="">Make the hindsight-api package runnable directly via uvx by adding script entry points. (<a href="https://github.com/vectorize-io/hindsight/commit/97f7a365" target="_blank" rel="noopener noreferrer" class=""><code>97f7a365</code></a>)</li>
+<li class="">Support passing query parameters during OpenAI-compatible client initialization for broader provider compatibility. (<a href="https://github.com/vectorize-io/hindsight/commit/20e17f28" target="_blank" rel="noopener noreferrer" class=""><code>20e17f28</code></a>)</li>
+<li class="">Upgrade the default MiniMax model from M2.5 to M2.7. (<a href="https://github.com/vectorize-io/hindsight/commit/1f1462a5" target="_blank" rel="noopener noreferrer" class=""><code>1f1462a5</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Prevent context overflow during observation search by disabling source facts in results. (<a href="https://github.com/vectorize-io/hindsight/commit/8e2e2d5b" target="_blank" rel="noopener noreferrer" class=""><code>8e2e2d5b</code></a>)</li>
+<li class="">Fix Claude Code integration session startup by pre-starting the daemon in the background. (<a href="https://github.com/vectorize-io/hindsight/commit/26944e25" target="_blank" rel="noopener noreferrer" class=""><code>26944e25</code></a>)</li>
+<li class="">Fix Claude Code integration installation and configuration experience so setup is more reliable. (<a href="https://github.com/vectorize-io/hindsight/commit/35b2cbb6" target="_blank" rel="noopener noreferrer" class=""><code>35b2cbb6</code></a>)</li>
+<li class="">Fix a memory leak in entity resolution that could grow over time under load. (<a href="https://github.com/vectorize-io/hindsight/commit/e6333719" target="_blank" rel="noopener noreferrer" class=""><code>e6333719</code></a>)</li>
+<li class="">Avoid crashes and retain failures when the Postgres pg_trgm extension is unavailable by handling detection/fallback correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/365fa3ce" target="_blank" rel="noopener noreferrer" class=""><code>365fa3ce</code></a>)</li>
+<li class="">Strip Markdown code fences from model outputs across all LLM providers for more consistent parsing. (<a href="https://github.com/vectorize-io/hindsight/commit/2f2db2a6" target="_blank" rel="noopener noreferrer" class=""><code>2f2db2a6</code></a>)</li>
+<li class="">Return a clear 400 error for empty recall queries and fix a SQL parameterization issue. (<a href="https://github.com/vectorize-io/hindsight/commit/5cdc714a" target="_blank" rel="noopener noreferrer" class=""><code>5cdc714a</code></a>)</li>
+<li class="">Ensure file retain requests include authentication headers so uploads work in authenticated deployments. (<a href="https://github.com/vectorize-io/hindsight/commit/78aa7c53" target="_blank" rel="noopener noreferrer" class=""><code>78aa7c53</code></a>)</li>
+<li class="">Fix MCP tool calls when MCP_AUTH_TOKEN and TENANT_API_KEY differ. (<a href="https://github.com/vectorize-io/hindsight/commit/8364b9c5" target="_blank" rel="noopener noreferrer" class=""><code>8364b9c5</code></a>)</li>
+<li class="">Allow claude-agent-sdk to install correctly on Linux/Docker environments. (<a href="https://github.com/vectorize-io/hindsight/commit/3f31cbf5" target="_blank" rel="noopener noreferrer" class=""><code>3f31cbf5</code></a>)</li>
+<li class="">In LiteLLM mode, fall back to the last user message when no explicit hindsight query is provided. (<a href="https://github.com/vectorize-io/hindsight/commit/5e8952c5" target="_blank" rel="noopener noreferrer" class=""><code>5e8952c5</code></a>)</li>
+<li class="">Fix non-atomic async operation creation to prevent inconsistent operation records. (<a href="https://github.com/vectorize-io/hindsight/commit/94cf89b5" target="_blank" rel="noopener noreferrer" class=""><code>94cf89b5</code></a>)</li>
+<li class="">Prevent orphaned parent operations when a batch retain child fails unexpectedly. (<a href="https://github.com/vectorize-io/hindsight/commit/43942455" target="_blank" rel="noopener noreferrer" class=""><code>43942455</code></a>)</li>
+<li class="">Fix failures for non-ASCII entity names by ensuring entity IDs are set correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/438ce98b" target="_blank" rel="noopener noreferrer" class=""><code>438ce98b</code></a>)</li>
+<li class="">Correctly store LLM facts labeled as &quot;assistant&quot; as &quot;experience&quot; in the database. (<a href="https://github.com/vectorize-io/hindsight/commit/446c75f3" target="_blank" rel="noopener noreferrer" class=""><code>446c75f3</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0419"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.19" target="_blank" rel="noopener noreferrer" class="">0.4.19</a><a href="#0419" class="hash-link" aria-label="Direct link to 0419" title="Direct link to 0419" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">TypeScript client now works in Deno environments. (<a href="https://github.com/vectorize-io/hindsight/commit/72c25c97" target="_blank" rel="noopener noreferrer" class=""><code>72c25c97</code></a>)</li>
+<li class="">Added Agno integration to use Hindsight as a memory toolkit. (<a href="https://github.com/vectorize-io/hindsight/commit/8c378b98" target="_blank" rel="noopener noreferrer" class=""><code>8c378b98</code></a>)</li>
+<li class="">Added Hermes Agent integration (hindsight-hermes) for persistent memory. (<a href="https://github.com/vectorize-io/hindsight/commit/ef90842f" target="_blank" rel="noopener noreferrer" class=""><code>ef90842f</code></a>)</li>
+<li class="">Expanded retain behavior with new <code>verbatim</code> and <code>chunks</code> extraction modes and named retain strategies. (<a href="https://github.com/vectorize-io/hindsight/commit/e4f8a157" target="_blank" rel="noopener noreferrer" class=""><code>e4f8a157</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved local reranker performance/efficiency with FP16 and bucketed batching, plus compatibility with Transformers 5.x. (<a href="https://github.com/vectorize-io/hindsight/commit/e7da7d0e" target="_blank" rel="noopener noreferrer" class=""><code>e7da7d0e</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Prevented silent memory loss when consolidation fails (failed consolidations are tracked and can be recovered). (<a href="https://github.com/vectorize-io/hindsight/commit/28dac7c7" target="_blank" rel="noopener noreferrer" class=""><code>28dac7c7</code></a>)</li>
+<li class="">Fixed Docker control-plane startup to respect the configured control-plane hostname. (<a href="https://github.com/vectorize-io/hindsight/commit/8a64dc8d" target="_blank" rel="noopener noreferrer" class=""><code>8a64dc8d</code></a>)</li>
+<li class="">Database cleanup migration now removes orphaned observation memory units to avoid inconsistent memory state. (<a href="https://github.com/vectorize-io/hindsight/commit/f09ad9de" target="_blank" rel="noopener noreferrer" class=""><code>f09ad9de</code></a>)</li>
+<li class="">Deleting a document now also deletes linked memory units to prevent leftover/stale memory entries. (<a href="https://github.com/vectorize-io/hindsight/commit/f27bd953" target="_blank" rel="noopener noreferrer" class=""><code>f27bd953</code></a>)</li>
+<li class="">Fixed MCP middleware to send an Accept header, preventing 406 response errors in some setups. (<a href="https://github.com/vectorize-io/hindsight/commit/836fd81e" target="_blank" rel="noopener noreferrer" class=""><code>836fd81e</code></a>)</li>
+<li class="">Improved compatibility with Gemini tool-calling by preserving thought signature metadata to avoid failures on gemini-3.1-flash-lite-preview. (<a href="https://github.com/vectorize-io/hindsight/commit/21f9f46c" target="_blank" rel="noopener noreferrer" class=""><code>21f9f46c</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0418"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.18" target="_blank" rel="noopener noreferrer" class="">0.4.18</a><a href="#0418" class="hash-link" aria-label="Direct link to 0418" title="Direct link to 0418" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add compound tag filtering using tag groups. (<a href="https://github.com/vectorize-io/hindsight/commit/5de793ee" target="_blank" rel="noopener noreferrer" class=""><code>5de793ee</code></a>)</li>
+<li class="">Publish new slim Python packages (hindsight-api-slim and hindsight-all-slim) for smaller installs. (<a href="https://github.com/vectorize-io/hindsight/commit/15ea23d5" target="_blank" rel="noopener noreferrer" class=""><code>15ea23d5</code></a>)</li>
+<li class="">Add MiniMax as a supported LLM provider. (<a href="https://github.com/vectorize-io/hindsight/commit/2344484f" target="_blank" rel="noopener noreferrer" class=""><code>2344484f</code></a>)</li>
+<li class="">Add Jina MLX reranker provider optimized for Apple Silicon. (<a href="https://github.com/vectorize-io/hindsight/commit/1caf5ec9" target="_blank" rel="noopener noreferrer" class=""><code>1caf5ec9</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Allow configuring maximum recall query tokens via an environment variable. (<a href="https://github.com/vectorize-io/hindsight/commit/66dedb8d" target="_blank" rel="noopener noreferrer" class=""><code>66dedb8d</code></a>)</li>
+<li class="">Improve retrieval performance by switching to per-bank HNSW indexes. (<a href="https://github.com/vectorize-io/hindsight/commit/43b3efc4" target="_blank" rel="noopener noreferrer" class=""><code>43b3efc4</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Prevent reranking failures by truncating long documents that exceed LiteLLM reranker context limits. (<a href="https://github.com/vectorize-io/hindsight/commit/eeb938fc" target="_blank" rel="noopener noreferrer" class=""><code>eeb938fc</code></a>)</li>
+<li class="">Ensure recalled memories are injected as system context for OpenClaw. (<a href="https://github.com/vectorize-io/hindsight/commit/b17f338e" target="_blank" rel="noopener noreferrer" class=""><code>b17f338e</code></a>)</li>
+<li class="">Ensure embedded profiles are registered in CLI metadata when the daemon starts. (<a href="https://github.com/vectorize-io/hindsight/commit/06b0f74a" target="_blank" rel="noopener noreferrer" class=""><code>06b0f74a</code></a>)</li>
+<li class="">Cancel in-flight async operations when a bank is deleted to avoid dangling work. (<a href="https://github.com/vectorize-io/hindsight/commit/0560f626" target="_blank" rel="noopener noreferrer" class=""><code>0560f626</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0417"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.17" target="_blank" rel="noopener noreferrer" class="">0.4.17</a><a href="#0417" class="hash-link" aria-label="Direct link to 0417" title="Direct link to 0417" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added a manual retry option for failed asynchronous operations. (<a href="https://github.com/vectorize-io/hindsight/commit/dcaacbe4" target="_blank" rel="noopener noreferrer" class=""><code>dcaacbe4</code></a>)</li>
+<li class="">You can now change/update tags on an existing document. (<a href="https://github.com/vectorize-io/hindsight/commit/1b4ad7f4" target="_blank" rel="noopener noreferrer" class=""><code>1b4ad7f4</code></a>)</li>
+<li class="">Added history tracking and a diff view for mental model changes. (<a href="https://github.com/vectorize-io/hindsight/commit/e2baca8b" target="_blank" rel="noopener noreferrer" class=""><code>e2baca8b</code></a>)</li>
+<li class="">Added observation history tracking with a UI diff view to review changes over time. (<a href="https://github.com/vectorize-io/hindsight/commit/576473b6" target="_blank" rel="noopener noreferrer" class=""><code>576473b6</code></a>)</li>
+<li class="">File uploads can now choose a parser per request, with configurable fallback chains. (<a href="https://github.com/vectorize-io/hindsight/commit/99220d05" target="_blank" rel="noopener noreferrer" class=""><code>99220d05</code></a>)</li>
+<li class="">Added an extension hook that runs after file-to-Markdown conversion completes. (<a href="https://github.com/vectorize-io/hindsight/commit/1d17dea2" target="_blank" rel="noopener noreferrer" class=""><code>1d17dea2</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Operations view now supports filtering by operation type and has more reliable auto-refresh behavior. (<a href="https://github.com/vectorize-io/hindsight/commit/f7a60f89" target="_blank" rel="noopener noreferrer" class=""><code>f7a60f89</code></a>)</li>
+<li class="">Added token limits for “source facts” used during consolidation and recall to better control context usage. (<a href="https://github.com/vectorize-io/hindsight/commit/5d05962d" target="_blank" rel="noopener noreferrer" class=""><code>5d05962d</code></a>)</li>
+<li class="">Improved bank selector usability by truncating very long bank names in the dropdown. (<a href="https://github.com/vectorize-io/hindsight/commit/1e40cd22" target="_blank" rel="noopener noreferrer" class=""><code>1e40cd22</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed webhook schema issues affecting multi-tenant retain webhooks. (<a href="https://github.com/vectorize-io/hindsight/commit/32a4882a" target="_blank" rel="noopener noreferrer" class=""><code>32a4882a</code></a>)</li>
+<li class="">Fixed file ingestion failures by stripping null bytes from parsed file content before retaining. (<a href="https://github.com/vectorize-io/hindsight/commit/cd3a6a22" target="_blank" rel="noopener noreferrer" class=""><code>cd3a6a22</code></a>)</li>
+<li class="">Fixed tool selection handling for OpenAI-compatible providers when using named tool_choice. (<a href="https://github.com/vectorize-io/hindsight/commit/1cdfb7c2" target="_blank" rel="noopener noreferrer" class=""><code>1cdfb7c2</code></a>)</li>
+<li class="">Improved consolidation behavior to prioritize a bank’s mission over an ephemeral-state heuristic. (<a href="https://github.com/vectorize-io/hindsight/commit/00ccf0b2" target="_blank" rel="noopener noreferrer" class=""><code>00ccf0b2</code></a>)</li>
+<li class="">Fixed database migrations to correctly handle mental model embedding dimension changes. (<a href="https://github.com/vectorize-io/hindsight/commit/7accac94" target="_blank" rel="noopener noreferrer" class=""><code>7accac94</code></a>)</li>
+<li class="">Fixed file upload failures caused by an Iris parser httpx read timeout. (<a href="https://github.com/vectorize-io/hindsight/commit/fa3501d4" target="_blank" rel="noopener noreferrer" class=""><code>fa3501d4</code></a>)</li>
+<li class="">Improved reliability of running migrations by serializing Alembic upgrades within the process. (<a href="https://github.com/vectorize-io/hindsight/commit/f88b50a4" target="_blank" rel="noopener noreferrer" class=""><code>f88b50a4</code></a>)</li>
+<li class="">Fixed Google Cloud Storage authentication when using Workload Identity Federation credentials. (<a href="https://github.com/vectorize-io/hindsight/commit/d2504ac5" target="_blank" rel="noopener noreferrer" class=""><code>d2504ac5</code></a>)</li>
+<li class="">Fixed the bank selector to refresh the bank list when the dropdown is opened. (<a href="https://github.com/vectorize-io/hindsight/commit/0ad8c2d0" target="_blank" rel="noopener noreferrer" class=""><code>0ad8c2d0</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0416"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.16" target="_blank" rel="noopener noreferrer" class="">0.4.16</a><a href="#0416" class="hash-link" aria-label="Direct link to 0416" title="Direct link to 0416" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added Webhooks with <code>consolidation.completed</code> and <code>retain.completed</code> events. (<a href="https://github.com/vectorize-io/hindsight/commit/abbf874d" target="_blank" rel="noopener noreferrer" class=""><code>abbf874d</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved OpenClaw recall/retention controls. (<a href="https://github.com/vectorize-io/hindsight/commit/d425e93c" target="_blank" rel="noopener noreferrer" class=""><code>d425e93c</code></a>)</li>
+<li class="">Improved search/reranking quality by switching combined scoring to multiplicative boosts. (<a href="https://github.com/vectorize-io/hindsight/commit/aa8e5475" target="_blank" rel="noopener noreferrer" class=""><code>aa8e5475</code></a>)</li>
+<li class="">Improved performance of observation recall by 40x on large banks. (<a href="https://github.com/vectorize-io/hindsight/commit/ad2cf72a" target="_blank" rel="noopener noreferrer" class=""><code>ad2cf72a</code></a>)</li>
+<li class="">Improved server shutdown behavior by capping graceful shutdown time and allowing a forced kill on a second Ctrl+C. (<a href="https://github.com/vectorize-io/hindsight/commit/4c058b4b" target="_blank" rel="noopener noreferrer" class=""><code>4c058b4b</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed an async deadlock risk by running database schema migrations in a background thread during startup. (<a href="https://github.com/vectorize-io/hindsight/commit/e0a2ac63" target="_blank" rel="noopener noreferrer" class=""><code>e0a2ac63</code></a>)</li>
+<li class="">Fixed webhook delivery/outbox processing so transactions don’t silently roll back due to using the wrong database schema name. (<a href="https://github.com/vectorize-io/hindsight/commit/75b95106" target="_blank" rel="noopener noreferrer" class=""><code>75b95106</code></a>)</li>
+<li class="">Fixed observation results to correctly resolve and return related chunks using source_memory_ids. (<a href="https://github.com/vectorize-io/hindsight/commit/cb6d1c46" target="_blank" rel="noopener noreferrer" class=""><code>cb6d1c46</code></a>)</li>
+<li class="">Fixed MCP bank-level tool filtering compatibility with FastMCP 3.x. (<a href="https://github.com/vectorize-io/hindsight/commit/f17406fd" target="_blank" rel="noopener noreferrer" class=""><code>f17406fd</code></a>)</li>
+<li class="">Fixed crashes when an LLM returns invalid JSON across all retries (now handled cleanly instead of raising a TypeError). (<a href="https://github.com/vectorize-io/hindsight/commit/66423b85" target="_blank" rel="noopener noreferrer" class=""><code>66423b85</code></a>)</li>
+<li class="">Fixed observations without source dates to preserve missing (None) temporal fields instead of incorrectly populating them. (<a href="https://github.com/vectorize-io/hindsight/commit/891c33b1" target="_blank" rel="noopener noreferrer" class=""><code>891c33b1</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0415"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.15" target="_blank" rel="noopener noreferrer" class="">0.4.15</a><a href="#0415" class="hash-link" aria-label="Direct link to 0415" title="Direct link to 0415" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added observation_scopes to control the granularity/visibility of observations. (<a href="https://github.com/vectorize-io/hindsight/commit/55af4681" target="_blank" rel="noopener noreferrer" class=""><code>55af4681</code></a>)</li>
+<li class="">List documents API now supports filtering by tags (and fixes the q parameter description). (<a href="https://github.com/vectorize-io/hindsight/commit/1d70abfe" target="_blank" rel="noopener noreferrer" class=""><code>1d70abfe</code></a>)</li>
+<li class="">Added PydanticAI integration for persistent agent memory. (<a href="https://github.com/vectorize-io/hindsight/commit/cab5a40f" target="_blank" rel="noopener noreferrer" class=""><code>cab5a40f</code></a>)</li>
+<li class="">Added richer entity label support (optional labels, free-form values, multi-value fields, and UI polish). (<a href="https://github.com/vectorize-io/hindsight/commit/9b96becc" target="_blank" rel="noopener noreferrer" class=""><code>9b96becc</code></a>)</li>
+<li class="">Added support for timestamp=&quot;unset&quot; so content can be retained without a date. (<a href="https://github.com/vectorize-io/hindsight/commit/f903948a" target="_blank" rel="noopener noreferrer" class=""><code>f903948a</code></a>)</li>
+<li class="">OpenClaw can now automatically retain the last n+2 turns every n turns (default n=10). (<a href="https://github.com/vectorize-io/hindsight/commit/ad1660b3" target="_blank" rel="noopener noreferrer" class=""><code>ad1660b3</code></a>)</li>
+<li class="">Added configurable Gemini/Vertex AI safety settings for LLM calls. (<a href="https://github.com/vectorize-io/hindsight/commit/73ef99e7" target="_blank" rel="noopener noreferrer" class=""><code>73ef99e7</code></a>)</li>
+<li class="">Added extension hooks to customize root routing and error headers. (<a href="https://github.com/vectorize-io/hindsight/commit/e407f4bc" target="_blank" rel="noopener noreferrer" class=""><code>e407f4bc</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved recall performance by fetching all recall chunks in a single query. (<a href="https://github.com/vectorize-io/hindsight/commit/61bf428b" target="_blank" rel="noopener noreferrer" class=""><code>61bf428b</code></a>)</li>
+<li class="">Improved recall/retain performance and scalability for large memory banks. (<a href="https://github.com/vectorize-io/hindsight/commit/7942f181" target="_blank" rel="noopener noreferrer" class=""><code>7942f181</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed the TypeScript SDK to send null (not undefined) when includeEntities is false. (<a href="https://github.com/vectorize-io/hindsight/commit/15f4b876" target="_blank" rel="noopener noreferrer" class=""><code>15f4b876</code></a>)</li>
+<li class="">Prevented reflect from failing with context_length_exceeded on large memory banks. (<a href="https://github.com/vectorize-io/hindsight/commit/77defd96" target="_blank" rel="noopener noreferrer" class=""><code>77defd96</code></a>)</li>
+<li class="">Fixed a consolidation deadlock caused by retrying after zombie processing tasks. (<a href="https://github.com/vectorize-io/hindsight/commit/c2876490" target="_blank" rel="noopener noreferrer" class=""><code>c2876490</code></a>)</li>
+<li class="">Fixed observations count in the control plane that always showed 0. (<a href="https://github.com/vectorize-io/hindsight/commit/eaeaa1f2" target="_blank" rel="noopener noreferrer" class=""><code>eaeaa1f2</code></a>)</li>
+<li class="">Fixed ZeroEntropy rerank endpoint URL and ensured the MCP retain async_processing parameter is handled correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/f6f1a7d8" target="_blank" rel="noopener noreferrer" class=""><code>f6f1a7d8</code></a>)</li>
+<li class="">Fixed JSON serialization issues and logging-related exception propagation when using the claude_code LLM provider. (<a href="https://github.com/vectorize-io/hindsight/commit/ecb833f4" target="_blank" rel="noopener noreferrer" class=""><code>ecb833f4</code></a>)</li>
+<li class="">Added bank-scoped request validation to prevent cross-bank/invalid bank operations. (<a href="https://github.com/vectorize-io/hindsight/commit/5270aa5a" target="_blank" rel="noopener noreferrer" class=""><code>5270aa5a</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0414"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.14" target="_blank" rel="noopener noreferrer" class="">0.4.14</a><a href="#0414" class="hash-link" aria-label="Direct link to 0414" title="Direct link to 0414" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add Chat SDK integration to give chatbots persistent memory. (<a href="https://github.com/vectorize-io/hindsight/commit/fed987f9" target="_blank" rel="noopener noreferrer" class=""><code>fed987f9</code></a>)</li>
+<li class="">Allow configuring which MCP tools are exposed per memory bank, and expand the MCP tool set with additional tools and parameters. (<a href="https://github.com/vectorize-io/hindsight/commit/3ffec650" target="_blank" rel="noopener noreferrer" class=""><code>3ffec650</code></a>)</li>
+<li class="">Enable the bank configuration API by default. (<a href="https://github.com/vectorize-io/hindsight/commit/4d030707" target="_blank" rel="noopener noreferrer" class=""><code>4d030707</code></a>)</li>
+<li class="">Support filtering graph-based memory retrieval by tags. (<a href="https://github.com/vectorize-io/hindsight/commit/0bb5ca4c" target="_blank" rel="noopener noreferrer" class=""><code>0bb5ca4c</code></a>)</li>
+<li class="">Add batch observations consolidation to process multiple observations more efficiently. (<a href="https://github.com/vectorize-io/hindsight/commit/0aa7c2b3" target="_blank" rel="noopener noreferrer" class=""><code>0aa7c2b3</code></a>)</li>
+<li class="">Add OpenClaw options to toggle autoRecall and exclude specific providers. (<a href="https://github.com/vectorize-io/hindsight/commit/3f9eb27c" target="_blank" rel="noopener noreferrer" class=""><code>3f9eb27c</code></a>)</li>
+<li class="">Add a ZeroEntropy reranker provider option. (<a href="https://github.com/vectorize-io/hindsight/commit/17259675" target="_blank" rel="noopener noreferrer" class=""><code>17259675</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Increase customization options for reflect, retain, and consolidation behavior. (<a href="https://github.com/vectorize-io/hindsight/commit/2a322732" target="_blank" rel="noopener noreferrer" class=""><code>2a322732</code></a>)</li>
+<li class="">Include source document metadata in fact extraction results. (<a href="https://github.com/vectorize-io/hindsight/commit/87219b73" target="_blank" rel="noopener noreferrer" class=""><code>87219b73</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Raise a clear error when embedding dimensions exceed pgvector HNSW limits (instead of failing later at runtime). (<a href="https://github.com/vectorize-io/hindsight/commit/8cd65b98" target="_blank" rel="noopener noreferrer" class=""><code>8cd65b98</code></a>)</li>
+<li class="">Fix multi-tenant schema isolation issues in storage and the bank config API. (<a href="https://github.com/vectorize-io/hindsight/commit/b180b3ad" target="_blank" rel="noopener noreferrer" class=""><code>b180b3ad</code></a>)</li>
+<li class="">Ensure LiteLLM embedding calls use the correct float encoding format to prevent embedding failures. (<a href="https://github.com/vectorize-io/hindsight/commit/58f2de70" target="_blank" rel="noopener noreferrer" class=""><code>58f2de70</code></a>)</li>
+<li class="">Improve recall performance by reducing memory usage during retrieval. (<a href="https://github.com/vectorize-io/hindsight/commit/9f0c031d" target="_blank" rel="noopener noreferrer" class=""><code>9f0c031d</code></a>)</li>
+<li class="">Handle observation regeneration correctly when underlying memories are deleted. (<a href="https://github.com/vectorize-io/hindsight/commit/ac9a94ad" target="_blank" rel="noopener noreferrer" class=""><code>ac9a94ad</code></a>)</li>
+<li class="">Fix reflect retrieval to correctly populate dependencies and enforce full hierarchical retrieval. (<a href="https://github.com/vectorize-io/hindsight/commit/8b1a4658" target="_blank" rel="noopener noreferrer" class=""><code>8b1a4658</code></a>)</li>
+<li class="">Fix OpenClaw health checks by passing the auth token to the health endpoint. (<a href="https://github.com/vectorize-io/hindsight/commit/40b02645" target="_blank" rel="noopener noreferrer" class=""><code>40b02645</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0413"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.13" target="_blank" rel="noopener noreferrer" class="">0.4.13</a><a href="#0413" class="hash-link" aria-label="Direct link to 0413" title="Direct link to 0413" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Switched the default OpenAI LLM to gpt-4o-mini. (<a href="https://github.com/vectorize-io/hindsight/commit/325b5cc1" target="_blank" rel="noopener noreferrer" class=""><code>325b5cc1</code></a>)</li>
+<li class="">Observation recall now includes the source facts behind recalled observations. (<a href="https://github.com/vectorize-io/hindsight/commit/5569d4ad" target="_blank" rel="noopener noreferrer" class=""><code>5569d4ad</code></a>)</li>
+<li class="">Added CrewAI integration to enable persistent memory. (<a href="https://github.com/vectorize-io/hindsight/commit/41db2960" target="_blank" rel="noopener noreferrer" class=""><code>41db2960</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed npx hindsight-control-plane failing to run. (<a href="https://github.com/vectorize-io/hindsight/commit/0758827d" target="_blank" rel="noopener noreferrer" class=""><code>0758827d</code></a>)</li>
+<li class="">Improved MCP compatibility by aligning the local MCP implementation with the server and removing the deprecated stateless parameter. (<a href="https://github.com/vectorize-io/hindsight/commit/ea8163c5" target="_blank" rel="noopener noreferrer" class=""><code>ea8163c5</code></a>)</li>
+<li class="">Fixed Docker startup failures when using named Docker volumes. (<a href="https://github.com/vectorize-io/hindsight/commit/ac739487" target="_blank" rel="noopener noreferrer" class=""><code>ac739487</code></a>)</li>
+<li class="">Prevented reranker crashes when an upstream provider returns an error. (<a href="https://github.com/vectorize-io/hindsight/commit/58c4d657" target="_blank" rel="noopener noreferrer" class=""><code>58c4d657</code></a>)</li>
+<li class="">Improved accuracy of fact temporal ordering by reducing per-fact time offsets. (<a href="https://github.com/vectorize-io/hindsight/commit/c3ef1555" target="_blank" rel="noopener noreferrer" class=""><code>c3ef1555</code></a>)</li>
+<li class="">Client timeout settings are now properly respected. (<a href="https://github.com/vectorize-io/hindsight/commit/dcaa9f14" target="_blank" rel="noopener noreferrer" class=""><code>dcaa9f14</code></a>)</li>
+<li class="">Fixed documents not being tracked when fact extraction returns zero facts. (<a href="https://github.com/vectorize-io/hindsight/commit/f78278ea" target="_blank" rel="noopener noreferrer" class=""><code>f78278ea</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0412"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.12" target="_blank" rel="noopener noreferrer" class="">0.4.12</a><a href="#0412" class="hash-link" aria-label="Direct link to 0412" title="Direct link to 0412" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Accept and ingest PDFs, images, and common Office documents as inputs. (<a href="https://github.com/vectorize-io/hindsight/commit/224b7b74" target="_blank" rel="noopener noreferrer" class=""><code>224b7b74</code></a>)</li>
+<li class="">Add the Iris file parser for improved document parsing support. (<a href="https://github.com/vectorize-io/hindsight/commit/7eafba66" target="_blank" rel="noopener noreferrer" class=""><code>7eafba66</code></a>)</li>
+<li class="">Add async Retain support via provider Batch APIs (e.g., OpenAI and Groq) for higher-throughput ingestion. (<a href="https://github.com/vectorize-io/hindsight/commit/40d42c58" target="_blank" rel="noopener noreferrer" class=""><code>40d42c58</code></a>)</li>
+<li class="">Allow Recall to return chunks only (no memories) by setting max_tokens=0. (<a href="https://github.com/vectorize-io/hindsight/commit/7dad9da0" target="_blank" rel="noopener noreferrer" class=""><code>7dad9da0</code></a>)</li>
+<li class="">Add a Go client SDK for the Hindsight API. (<a href="https://github.com/vectorize-io/hindsight/commit/2a47389f" target="_blank" rel="noopener noreferrer" class=""><code>2a47389f</code></a>)</li>
+<li class="">Add support for the pgvectorscale (DiskANN) vector index backend. (<a href="https://github.com/vectorize-io/hindsight/commit/95c42204" target="_blank" rel="noopener noreferrer" class=""><code>95c42204</code></a>)</li>
+<li class="">Add support for Azure pg_diskann vector indexing. (<a href="https://github.com/vectorize-io/hindsight/commit/476726c2" target="_blank" rel="noopener noreferrer" class=""><code>476726c2</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improve reliability of async batch Retain when ingesting large payloads. (<a href="https://github.com/vectorize-io/hindsight/commit/aefb3fcf" target="_blank" rel="noopener noreferrer" class=""><code>aefb3fcf</code></a>)</li>
+<li class="">Improve AI SDK tooling to make it easier to work with Hindsight programmatically. (<a href="https://github.com/vectorize-io/hindsight/commit/d06a0259" target="_blank" rel="noopener noreferrer" class=""><code>d06a0259</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Ensure document tags are preserved when using the async Retain flow. (<a href="https://github.com/vectorize-io/hindsight/commit/b4b5c44a" target="_blank" rel="noopener noreferrer" class=""><code>b4b5c44a</code></a>)</li>
+<li class="">Fix OpenClaw ingestion failures for very large content (E2BIG). (<a href="https://github.com/vectorize-io/hindsight/commit/6bad6673" target="_blank" rel="noopener noreferrer" class=""><code>6bad6673</code></a>)</li>
+<li class="">Harden OpenClaw behavior (safer shell usage, better HTTP mode handling, and more reliable initialization), including per-user banks support. (<a href="https://github.com/vectorize-io/hindsight/commit/c4610130" target="_blank" rel="noopener noreferrer" class=""><code>c4610130</code></a>)</li>
+<li class="">Improve Python client async API consistency and reduce connection drop issues via keepalive timeout fixes. (<a href="https://github.com/vectorize-io/hindsight/commit/8114ef44" target="_blank" rel="noopener noreferrer" class=""><code>8114ef44</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0411"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.11" target="_blank" rel="noopener noreferrer" class="">0.4.11</a><a href="#0411" class="hash-link" aria-label="Direct link to 0411" title="Direct link to 0411" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added support for LiteLLM SDK as an embeddings and reranking provider. (<a href="https://github.com/vectorize-io/hindsight/commit/e408b7e" target="_blank" rel="noopener noreferrer" class=""><code>e408b7e</code></a>)</li>
+<li class="">Expanded Postgres search support with additional text/vector extensions, including TimescaleDB pg_textsearch and vchord/pgvector options. (<a href="https://github.com/vectorize-io/hindsight/commit/d871c30" target="_blank" rel="noopener noreferrer" class=""><code>d871c30</code></a>)</li>
+<li class="">Added hierarchical configuration scopes (system, tenant, bank) for more flexible multi-tenant setup and overrides. (<a href="https://github.com/vectorize-io/hindsight/commit/8d731f2" target="_blank" rel="noopener noreferrer" class=""><code>8d731f2</code></a>)</li>
+<li class="">Added reverse proxy/base-path support for running Hindsight behind a proxy. (<a href="https://github.com/vectorize-io/hindsight/commit/93ddd41" target="_blank" rel="noopener noreferrer" class=""><code>93ddd41</code></a>)</li>
+<li class="">Added MCP tools to create, read, update, and delete mental models. (<a href="https://github.com/vectorize-io/hindsight/commit/f641b30" target="_blank" rel="noopener noreferrer" class=""><code>f641b30</code></a>)</li>
+<li class="">Added a &quot;docs&quot; skill for agents/tools to access documentation-oriented capabilities. (<a href="https://github.com/vectorize-io/hindsight/commit/dd1e098" target="_blank" rel="noopener noreferrer" class=""><code>dd1e098</code></a>)</li>
+<li class="">Added an OpenClaw configuration option to skip recall/retain for specific providers. (<a href="https://github.com/vectorize-io/hindsight/commit/fb7be3e" target="_blank" rel="noopener noreferrer" class=""><code>fb7be3e</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved LiteLLM gateway model configuration for more reliable provider/model selection. (<a href="https://github.com/vectorize-io/hindsight/commit/7d95a00" target="_blank" rel="noopener noreferrer" class=""><code>7d95a00</code></a>)</li>
+<li class="">Exposed actual LLM token usage in retain results to improve cost/usage visibility. (<a href="https://github.com/vectorize-io/hindsight/commit/83ca669" target="_blank" rel="noopener noreferrer" class=""><code>83ca669</code></a>)</li>
+<li class="">Added user-initiated attribution to request context to improve async task and usage attribution. (<a href="https://github.com/vectorize-io/hindsight/commit/90be7c6" target="_blank" rel="noopener noreferrer" class=""><code>90be7c6</code></a>)</li>
+<li class="">Added OpenTelemetry tracing for improved request traceability and observability. (<a href="https://github.com/vectorize-io/hindsight/commit/69dec8e" target="_blank" rel="noopener noreferrer" class=""><code>69dec8e</code></a>)</li>
+<li class="">Helm chart: split TEI embedding and reranker into separate deployments for independent scaling and rollout. (<a href="https://github.com/vectorize-io/hindsight/commit/43f9a8b" target="_blank" rel="noopener noreferrer" class=""><code>43f9a8b</code></a>)</li>
+<li class="">Helm chart: added PodDisruptionBudgets and per-component affinity controls for more resilient scheduling. (<a href="https://github.com/vectorize-io/hindsight/commit/9943957" target="_blank" rel="noopener noreferrer" class=""><code>9943957</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed a recursion issue in memory retention that could cause failures or runaway memory usage. (<a href="https://github.com/vectorize-io/hindsight/commit/4f11210" target="_blank" rel="noopener noreferrer" class=""><code>4f11210</code></a>)</li>
+<li class="">Fixed Reflect API serialization/schema issues for &quot;based_on&quot; so reflections are returned and stored correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/f9a8a8e" target="_blank" rel="noopener noreferrer" class=""><code>f9a8a8e</code></a>)</li>
+<li class="">Improved MCP server compatibility by allowing extra tool arguments when appropriate and fixing bank ID resolution priority. (<a href="https://github.com/vectorize-io/hindsight/commit/7ee229b" target="_blank" rel="noopener noreferrer" class=""><code>7ee229b</code></a>)</li>
+<li class="">Added missing trust_code environment configuration support. (<a href="https://github.com/vectorize-io/hindsight/commit/60574ee" target="_blank" rel="noopener noreferrer" class=""><code>60574ee</code></a>)</li>
+<li class="">Hardened the MCP server with fixes to routing/validation and more accurate usage metering. (<a href="https://github.com/vectorize-io/hindsight/commit/e798979" target="_blank" rel="noopener noreferrer" class=""><code>e798979</code></a>)</li>
+<li class="">Fixed the slim Docker image to include tiktoken to prevent runtime tokenization errors. (<a href="https://github.com/vectorize-io/hindsight/commit/6eec83b" target="_blank" rel="noopener noreferrer" class=""><code>6eec83b</code></a>)</li>
+<li class="">Fixed MCP operations not being tracked correctly for usage metering. (<a href="https://github.com/vectorize-io/hindsight/commit/888b50d" target="_blank" rel="noopener noreferrer" class=""><code>888b50d</code></a>)</li>
+<li class="">Helm chart: fixed GKE deployments overriding the configured HINDSIGHT_API_PORT. (<a href="https://github.com/vectorize-io/hindsight/commit/03f47e2" target="_blank" rel="noopener noreferrer" class=""><code>03f47e2</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0410"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.10" target="_blank" rel="noopener noreferrer" class="">0.4.10</a><a href="#0410" class="hash-link" aria-label="Direct link to 0410" title="Direct link to 0410" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Provided a slimmer Docker distribution to reduce image size and speed up pulls. (<a href="https://github.com/vectorize-io/hindsight/commit/f648178" target="_blank" rel="noopener noreferrer" class=""><code>f648178</code></a>)</li>
+<li class="">Added Markdown support in Reflect and Mental Models content. (<a href="https://github.com/vectorize-io/hindsight/commit/c4ef090" target="_blank" rel="noopener noreferrer" class=""><code>c4ef090</code></a>)</li>
+<li class="">Added built-in Supabase tenant extension for running Hindsight with Supabase-backed multi-tenancy. (<a href="https://github.com/vectorize-io/hindsight/commit/e99ee0f" target="_blank" rel="noopener noreferrer" class=""><code>e99ee0f</code></a>)</li>
+<li class="">Added TenantExtension authentication support to the MCP endpoint. (<a href="https://github.com/vectorize-io/hindsight/commit/fedfb49" target="_blank" rel="noopener noreferrer" class=""><code>fedfb49</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved MCP tool availability/routing based on the endpoint being used. (<a href="https://github.com/vectorize-io/hindsight/commit/d90588b" target="_blank" rel="noopener noreferrer" class=""><code>d90588b</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Stopped logging database usernames and passwords to prevent credential leaks in logs. (<a href="https://github.com/vectorize-io/hindsight/commit/c568094" target="_blank" rel="noopener noreferrer" class=""><code>c568094</code></a>)</li>
+<li class="">Fixed OpenClaw sessions wiping memory on each new session. (<a href="https://github.com/vectorize-io/hindsight/commit/981cf60" target="_blank" rel="noopener noreferrer" class=""><code>981cf60</code></a>)</li>
+<li class="">Fixed hindsight-embed profiles not loading correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/0430588" target="_blank" rel="noopener noreferrer" class=""><code>0430588</code></a>)</li>
+<li class="">Fixed tagged directives so they correctly apply to tagged mental models. (<a href="https://github.com/vectorize-io/hindsight/commit/278718d" target="_blank" rel="noopener noreferrer" class=""><code>278718d</code></a>)</li>
+<li class="">Fixed a cast error that could cause failures at runtime. (<a href="https://github.com/vectorize-io/hindsight/commit/093ecff" target="_blank" rel="noopener noreferrer" class=""><code>093ecff</code></a>)</li>
+</ul>
+<p><strong>Other</strong></p>
+<ul>
+<li class="">Added a docker-compose example to simplify local deployment and testing. (<a href="https://github.com/vectorize-io/hindsight/commit/5179d5f" target="_blank" rel="noopener noreferrer" class=""><code>5179d5f</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="049"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.9" target="_blank" rel="noopener noreferrer" class="">0.4.9</a><a href="#049" class="hash-link" aria-label="Direct link to 049" title="Direct link to 049" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">New AI SDK integration. (<a href="https://github.com/vectorize-io/hindsight/commit/7e339e1" target="_blank" rel="noopener noreferrer" class=""><code>7e339e1</code></a>)</li>
+<li class="">Add a Python SDK for running Hindsight in embedded mode (HindsightEmbedded). (<a href="https://github.com/vectorize-io/hindsight/commit/d3302c9" target="_blank" rel="noopener noreferrer" class=""><code>d3302c9</code></a>)</li>
+<li class="">Add streaming support to the hindsight-litellm wrappers. (<a href="https://github.com/vectorize-io/hindsight/commit/665877b" target="_blank" rel="noopener noreferrer" class=""><code>665877b</code></a>)</li>
+<li class="">Add OpenClaw support for connecting to an external Hindsight API and using dynamic per-channel memory banks. (<a href="https://github.com/vectorize-io/hindsight/commit/6b34692" target="_blank" rel="noopener noreferrer" class=""><code>6b34692</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improve the mental models experience in the control plane UI. (<a href="https://github.com/vectorize-io/hindsight/commit/7097716" target="_blank" rel="noopener noreferrer" class=""><code>7097716</code></a>)</li>
+<li class="">Reduce noisy Hugging Face logging output. (<a href="https://github.com/vectorize-io/hindsight/commit/34d9188" target="_blank" rel="noopener noreferrer" class=""><code>34d9188</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Improve recall endpoint reliability by handling timeouts correctly and rejecting overly long queries. (<a href="https://github.com/vectorize-io/hindsight/commit/dd621a6" target="_blank" rel="noopener noreferrer" class=""><code>dd621a6</code></a>)</li>
+<li class="">Improve /reflect behavior with Claude Code and Codex providers. (<a href="https://github.com/vectorize-io/hindsight/commit/a43d208" target="_blank" rel="noopener noreferrer" class=""><code>a43d208</code></a>)</li>
+<li class="">Fix OpenClaw shell argument escaping for more reliable command execution. (<a href="https://github.com/vectorize-io/hindsight/commit/63e2964" target="_blank" rel="noopener noreferrer" class=""><code>63e2964</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="048"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.8" target="_blank" rel="noopener noreferrer" class="">0.4.8</a><a href="#048" class="hash-link" aria-label="Direct link to 048" title="Direct link to 048" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added profile support for <code>hindsight-embed</code>, enabling separate embedding configurations/workspaces. (<a href="https://github.com/vectorize-io/hindsight/commit/6c7f057" target="_blank" rel="noopener noreferrer" class=""><code>6c7f057</code></a>)</li>
+<li class="">Added support for additional LLM backends, including OpenAI Codex and Claude Code. (<a href="https://github.com/vectorize-io/hindsight/commit/539190b" target="_blank" rel="noopener noreferrer" class=""><code>539190b</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Enhanced OpenClaw and <code>hindsight-embed</code> parameter/config options for easier configuration and better defaults. (<a href="https://github.com/vectorize-io/hindsight/commit/749478d" target="_blank" rel="noopener noreferrer" class=""><code>749478d</code></a>)</li>
+<li class="">Added OpenClaw plugin configuration options to select LLM provider and model. (<a href="https://github.com/vectorize-io/hindsight/commit/8564135" target="_blank" rel="noopener noreferrer" class=""><code>8564135</code></a>)</li>
+<li class="">Server now prints its version during startup to simplify debugging and support requests. (<a href="https://github.com/vectorize-io/hindsight/commit/1499ce5" target="_blank" rel="noopener noreferrer" class=""><code>1499ce5</code></a>)</li>
+<li class="">Improved tracing/debuggability by propagating request context through asynchronous background tasks. (<a href="https://github.com/vectorize-io/hindsight/commit/44d9125" target="_blank" rel="noopener noreferrer" class=""><code>44d9125</code></a>)</li>
+<li class="">Added stronger validation and context for mental model create/refresh operations to prevent invalid requests. (<a href="https://github.com/vectorize-io/hindsight/commit/35127d5" target="_blank" rel="noopener noreferrer" class=""><code>35127d5</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Improved embedding CLI experience with richer logs and isolated profiles to avoid cross-contamination between runs. (<a href="https://github.com/vectorize-io/hindsight/commit/794a743" target="_blank" rel="noopener noreferrer" class=""><code>794a743</code></a>)</li>
+<li class="">Operation validation now runs correctly in the worker process, preventing invalid background operations from slipping through. (<a href="https://github.com/vectorize-io/hindsight/commit/96f0e54" target="_blank" rel="noopener noreferrer" class=""><code>96f0e54</code></a>)</li>
+<li class="">Fixed unreliable behavior when using a custom PostgreSQL schema. (<a href="https://github.com/vectorize-io/hindsight/commit/3825506" target="_blank" rel="noopener noreferrer" class=""><code>3825506</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="047"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.7" target="_blank" rel="noopener noreferrer" class="">0.4.7</a><a href="#047" class="hash-link" aria-label="Direct link to 047" title="Direct link to 047" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add extension hooks to validate and customize mental model operations. (<a href="https://github.com/vectorize-io/hindsight/commit/9c3fda7" target="_blank" rel="noopener noreferrer" class=""><code>9c3fda7</code></a>)</li>
+<li class="">Add support for using an external embedding API provider in OpenClaw plugin (with additional OpenClaw compatibility fixes). (<a href="https://github.com/vectorize-io/hindsight/commit/4b57b82" target="_blank" rel="noopener noreferrer" class=""><code>4b57b82</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Speed up container startup by preloading the tiktoken encoding during Docker image builds. (<a href="https://github.com/vectorize-io/hindsight/commit/039944c" target="_blank" rel="noopener noreferrer" class=""><code>039944c</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Prevent PostgreSQL insert failures by stripping null bytes from text fields before saving. (<a href="https://github.com/vectorize-io/hindsight/commit/ef9d3a1" target="_blank" rel="noopener noreferrer" class=""><code>ef9d3a1</code></a>)</li>
+<li class="">Fix worker schema selection so it uses the correct default database schema. (<a href="https://github.com/vectorize-io/hindsight/commit/d788a55" target="_blank" rel="noopener noreferrer" class=""><code>d788a55</code></a>)</li>
+<li class="">Honor an already-set HINDSIGHT_API_DATABASE_URL instead of overwriting it in the hindsight-embed workflow. (<a href="https://github.com/vectorize-io/hindsight/commit/f0cb192" target="_blank" rel="noopener noreferrer" class=""><code>f0cb192</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="046"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.6" target="_blank" rel="noopener noreferrer" class="">0.4.6</a><a href="#046" class="hash-link" aria-label="Direct link to 046" title="Direct link to 046" translate="no">​</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved OpenClaw configuration setup to make embedding integration easier to configure. (<a href="https://github.com/vectorize-io/hindsight/commit/27498f9" target="_blank" rel="noopener noreferrer" class=""><code>27498f9</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed OpenClaw embedding version binding/versioning to prevent mismatches when using the embed integration. (<a href="https://github.com/vectorize-io/hindsight/commit/1163b1f" target="_blank" rel="noopener noreferrer" class=""><code>1163b1f</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="045"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.5" target="_blank" rel="noopener noreferrer" class="">0.4.5</a><a href="#045" class="hash-link" aria-label="Direct link to 045" title="Direct link to 045" translate="no">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed occasional failures when retaining memories asynchronously with timestamps. (<a href="https://github.com/vectorize-io/hindsight/commit/cbb8fc6" target="_blank" rel="noopener noreferrer" class=""><code>cbb8fc6</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="044"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.4" target="_blank" rel="noopener noreferrer" class="">0.4.4</a><a href="#044" class="hash-link" aria-label="Direct link to 044" title="Direct link to 044" translate="no">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed async “retain” operations failing when a timestamp is provided. (<a href="https://github.com/vectorize-io/hindsight/commit/35f0984" target="_blank" rel="noopener noreferrer" class=""><code>35f0984</code></a>)</li>
+<li class="">Corrected the OpenClaw daemon integration name to “openclaw” (previously “openclawd”). (<a href="https://github.com/vectorize-io/hindsight/commit/b364bc3" target="_blank" rel="noopener noreferrer" class=""><code>b364bc3</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="043"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.3" target="_blank" rel="noopener noreferrer" class="">0.4.3</a><a href="#043" class="hash-link" aria-label="Direct link to 043" title="Direct link to 043" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add Vertex AI as a supported LLM provider. (<a href="https://github.com/vectorize-io/hindsight/commit/c2ac7d0" target="_blank" rel="noopener noreferrer" class=""><code>c2ac7d0</code></a>, <a href="https://github.com/vectorize-io/hindsight/commit/49ae55a" target="_blank" rel="noopener noreferrer" class=""><code>49ae55a</code></a>)</li>
+<li class="">Add Bearer token authentication for MCP and propagate tenant authentication across MCP requests. (<a href="https://github.com/vectorize-io/hindsight/commit/0da77ce" target="_blank" rel="noopener noreferrer" class=""><code>0da77ce</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">CLI: add a --wait flag for consolidate and a --date filter for listing documents. (<a href="https://github.com/vectorize-io/hindsight/commit/ff20bf9" target="_blank" rel="noopener noreferrer" class=""><code>ff20bf9</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fix worker polling deadlocks to prevent background processing from stalling. (<a href="https://github.com/vectorize-io/hindsight/commit/f4f86e3" target="_blank" rel="noopener noreferrer" class=""><code>f4f86e3</code></a>)</li>
+<li class="">Improve reliability of Docker builds by retrying ML model downloads. (<a href="https://github.com/vectorize-io/hindsight/commit/ecc590c" target="_blank" rel="noopener noreferrer" class=""><code>ecc590c</code></a>)</li>
+<li class="">Fix tenant authentication handling for internal background tasks and ensure the control-plane forwards required auth to the dataplane. (<a href="https://github.com/vectorize-io/hindsight/commit/03bf13e" target="_blank" rel="noopener noreferrer" class=""><code>03bf13e</code></a>)</li>
+<li class="">Ensure tenant database migrations run at startup and workers use the correct tenant schema context. (<a href="https://github.com/vectorize-io/hindsight/commit/657fe02" target="_blank" rel="noopener noreferrer" class=""><code>657fe02</code></a>)</li>
+<li class="">Fix control-plane graph endpoint errors when upstream data is missing. (<a href="https://github.com/vectorize-io/hindsight/commit/751f99a" target="_blank" rel="noopener noreferrer" class=""><code>751f99a</code></a>)</li>
+</ul>
+<p><strong>Other</strong></p>
+<ul>
+<li class="">Rename the default bot/user identity from &quot;moltbot&quot; to &quot;openclaw&quot;. (<a href="https://github.com/vectorize-io/hindsight/commit/728ce13" target="_blank" rel="noopener noreferrer" class=""><code>728ce13</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="042"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.2" target="_blank" rel="noopener noreferrer" class="">0.4.2</a><a href="#042" class="hash-link" aria-label="Direct link to 042" title="Direct link to 042" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added Clawdbot/Moltbot/OpenClaw integration. (<a href="https://github.com/vectorize-io/hindsight/commit/12e9a3d" target="_blank" rel="noopener noreferrer" class=""><code>12e9a3d</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Added additional configuration options to control LLM retry behavior. (<a href="https://github.com/vectorize-io/hindsight/commit/3f211f0" target="_blank" rel="noopener noreferrer" class=""><code>3f211f0</code></a>)</li>
+<li class="">Added real-time logs showing a detailed timing breakdown during consolidation runs. (<a href="https://github.com/vectorize-io/hindsight/commit/8781c9f" target="_blank" rel="noopener noreferrer" class=""><code>8781c9f</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed hindsight-embed crashing on macOS. (<a href="https://github.com/vectorize-io/hindsight/commit/c16ccc2" target="_blank" rel="noopener noreferrer" class=""><code>c16ccc2</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="041"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.1" target="_blank" rel="noopener noreferrer" class="">0.4.1</a><a href="#041" class="hash-link" aria-label="Direct link to 041" title="Direct link to 041" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added support for using a non-default PostgreSQL schema by default. (<a href="https://github.com/vectorize-io/hindsight/commit/2b72e1f" target="_blank" rel="noopener noreferrer" class=""><code>2b72e1f</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved memory consolidation performance (benchmarking and optimizations). (<a href="https://github.com/vectorize-io/hindsight/commit/b43ef98" target="_blank" rel="noopener noreferrer" class=""><code>b43ef98</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed the /version endpoint returning an incorrect version. (<a href="https://github.com/vectorize-io/hindsight/commit/cfcc23c" target="_blank" rel="noopener noreferrer" class=""><code>cfcc23c</code></a>)</li>
+<li class="">Fixed mental model search failing due to UUID type mismatch after text-ID migration. (<a href="https://github.com/vectorize-io/hindsight/commit/94cc0a1" target="_blank" rel="noopener noreferrer" class=""><code>94cc0a1</code></a>)</li>
+<li class="">Added safer PyTorch device detection to prevent crashes on some environments. (<a href="https://github.com/vectorize-io/hindsight/commit/67c4788" target="_blank" rel="noopener noreferrer" class=""><code>67c4788</code></a>)</li>
+<li class="">Fixed Python packages exposing an incorrect <strong>version</strong> value. (<a href="https://github.com/vectorize-io/hindsight/commit/fccbdfe" target="_blank" rel="noopener noreferrer" class=""><code>fccbdfe</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="040"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.4.0" target="_blank" rel="noopener noreferrer" class="">0.4.0</a><a href="#040" class="hash-link" aria-label="Direct link to 040" title="Direct link to 040" translate="no">​</a></h2>
+<p><strong>Observations</strong>, <strong>Mental Models</strong>, new <strong>Agentic Reflect</strong> and Directives, read the <a class="" href="/zh-Hans/blog/learning-capabilities">announcement</a>.</p>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added support for providing a custom prompt for memory extraction. (<a href="https://github.com/vectorize-io/hindsight/commit/3172e99" target="_blank" rel="noopener noreferrer" class=""><code>3172e99</code></a>)</li>
+<li class="">Expanded the LiteLLM integration with async retain/reflect support, cleaner API, and support for tags/mission (including passing API keys correctly). (<a href="https://github.com/vectorize-io/hindsight/commit/1d4879a" target="_blank" rel="noopener noreferrer" class=""><code>1d4879a</code></a>)</li>
+<li class="">Added a new worker service to run background tasks at scale. (<a href="https://github.com/vectorize-io/hindsight/commit/4c79240" target="_blank" rel="noopener noreferrer" class=""><code>4c79240</code></a>)</li>
+<li class="">MCP retain now supports timestamps. (<a href="https://github.com/vectorize-io/hindsight/commit/b378f68" target="_blank" rel="noopener noreferrer" class=""><code>b378f68</code></a>)</li>
+<li class="">Added support for installing skills via <code>npx add-skill</code>. (<a href="https://github.com/vectorize-io/hindsight/commit/ec22317" target="_blank" rel="noopener noreferrer" class=""><code>ec22317</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">CLI retain-files now accepts more file types. (<a href="https://github.com/vectorize-io/hindsight/commit/1eeced3" target="_blank" rel="noopener noreferrer" class=""><code>1eeced3</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed a macOS crash in the embed daemon caused by an XPC connection issue. (<a href="https://github.com/vectorize-io/hindsight/commit/e5fc6ee" target="_blank" rel="noopener noreferrer" class=""><code>e5fc6ee</code></a>)</li>
+<li class="">Fixed occasional extraction in the wrong language. (<a href="https://github.com/vectorize-io/hindsight/commit/87d4a36" target="_blank" rel="noopener noreferrer" class=""><code>87d4a36</code></a>)</li>
+<li class="">Fixed PyTorch model initialization issues that could cause startup failures (meta tensor/init problems). (<a href="https://github.com/vectorize-io/hindsight/commit/ddaa5f5" target="_blank" rel="noopener noreferrer" class=""><code>ddaa5f5</code></a>)</li>
+</ul>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add memory tags so you can label and filter memories during recall/reflect. (<a href="https://github.com/vectorize-io/hindsight/commit/20c8f8b" target="_blank" rel="noopener noreferrer" class=""><code>20c8f8b</code></a>)</li>
+<li class="">Allow choosing different AI providers/models per operation. (<a href="https://github.com/vectorize-io/hindsight/commit/e6709d5" target="_blank" rel="noopener noreferrer" class=""><code>e6709d5</code></a>)</li>
+<li class="">Add Cohere support for embeddings and reranking. (<a href="https://github.com/vectorize-io/hindsight/commit/4de0730" target="_blank" rel="noopener noreferrer" class=""><code>4de0730</code></a>)</li>
+<li class="">Add configurable embedding dimensions and OpenAI embeddings support. (<a href="https://github.com/vectorize-io/hindsight/commit/70de23e" target="_blank" rel="noopener noreferrer" class=""><code>70de23e</code></a>)</li>
+<li class="">Support custom base URLs for OpenAI-style embeddings and Cohere endpoints. (<a href="https://github.com/vectorize-io/hindsight/commit/fa53917" target="_blank" rel="noopener noreferrer" class=""><code>fa53917</code></a>)</li>
+<li class="">Add LiteLLM gateway support for routing LLM/embedding requests. (<a href="https://github.com/vectorize-io/hindsight/commit/d47c8a2" target="_blank" rel="noopener noreferrer" class=""><code>d47c8a2</code></a>)</li>
+<li class="">Add multilingual content support to improve handling and retrieval across languages. (<a href="https://github.com/vectorize-io/hindsight/commit/c65c6a9" target="_blank" rel="noopener noreferrer" class=""><code>c65c6a9</code></a>)</li>
+<li class="">Add delete memory bank capability. (<a href="https://github.com/vectorize-io/hindsight/commit/4b82d2d" target="_blank" rel="noopener noreferrer" class=""><code>4b82d2d</code></a>)</li>
+<li class="">Add backup/restore tooling for memory banks. (<a href="https://github.com/vectorize-io/hindsight/commit/67b273d" target="_blank" rel="noopener noreferrer" class=""><code>67b273d</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Add retention modes to control how memories are extracted and stored. (<a href="https://github.com/vectorize-io/hindsight/commit/fb31a35" target="_blank" rel="noopener noreferrer" class=""><code>fb31a35</code></a>)</li>
+<li class="">Add offline (optional) database migrations to support restricted/air-gapped deployments. (<a href="https://github.com/vectorize-io/hindsight/commit/233bd2e" target="_blank" rel="noopener noreferrer" class=""><code>233bd2e</code></a>)</li>
+<li class="">Add database connection configuration options for more flexible deployments. (<a href="https://github.com/vectorize-io/hindsight/commit/33fac2c" target="_blank" rel="noopener noreferrer" class=""><code>33fac2c</code></a>)</li>
+<li class="">Load .env automatically on startup to simplify configuration. (<a href="https://github.com/vectorize-io/hindsight/commit/c06d9b4" target="_blank" rel="noopener noreferrer" class=""><code>c06d9b4</code></a>)</li>
+<li class="">Expose an operation ID from retain requests so async/background processing can be tracked. (<a href="https://github.com/vectorize-io/hindsight/commit/1dacd0e" target="_blank" rel="noopener noreferrer" class=""><code>1dacd0e</code></a>)</li>
+<li class="">Add per-request LLM token usage metrics for monitoring and cost tracking. (<a href="https://github.com/vectorize-io/hindsight/commit/29a542d" target="_blank" rel="noopener noreferrer" class=""><code>29a542d</code></a>)</li>
+<li class="">Add LLM call latency metrics for performance monitoring. (<a href="https://github.com/vectorize-io/hindsight/commit/5e1f13e" target="_blank" rel="noopener noreferrer" class=""><code>5e1f13e</code></a>)</li>
+<li class="">Include tenant in metrics labels for better multi-tenant observability. (<a href="https://github.com/vectorize-io/hindsight/commit/1ffc2a4" target="_blank" rel="noopener noreferrer" class=""><code>1ffc2a4</code></a>)</li>
+<li class="">Add async processing option to MCP retain tool for background retention workflows. (<a href="https://github.com/vectorize-io/hindsight/commit/37fc7fb" target="_blank" rel="noopener noreferrer" class=""><code>37fc7fb</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fix extension loading in multi-worker deployments so all workers load extensions correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/f5f3fca" target="_blank" rel="noopener noreferrer" class=""><code>f5f3fca</code></a>)</li>
+<li class="">Improve recall performance by batching recall queries. (<a href="https://github.com/vectorize-io/hindsight/commit/5991308" target="_blank" rel="noopener noreferrer" class=""><code>5991308</code></a>)</li>
+<li class="">Improve retrieval quality and stability for large memory banks (graph/MPFP retrieval fixes). (<a href="https://github.com/vectorize-io/hindsight/commit/6232e69" target="_blank" rel="noopener noreferrer" class=""><code>6232e69</code></a>)</li>
+<li class="">Fix entities list being limited to 100 entities. (<a href="https://github.com/vectorize-io/hindsight/commit/26bf571" target="_blank" rel="noopener noreferrer" class=""><code>26bf571</code></a>)</li>
+<li class="">Fix UI only showing the first 1000 memories. (<a href="https://github.com/vectorize-io/hindsight/commit/67c1a42" target="_blank" rel="noopener noreferrer" class=""><code>67c1a42</code></a>)</li>
+<li class="">Fix duplicated causal relationships and improve token usage during processing. (<a href="https://github.com/vectorize-io/hindsight/commit/49e233c" target="_blank" rel="noopener noreferrer" class=""><code>49e233c</code></a>)</li>
+<li class="">Improve causal link detection accuracy. (<a href="https://github.com/vectorize-io/hindsight/commit/2a00df0" target="_blank" rel="noopener noreferrer" class=""><code>2a00df0</code></a>)</li>
+<li class="">Make retain max completion tokens configurable to prevent truncation issues. (<a href="https://github.com/vectorize-io/hindsight/commit/7715a51" target="_blank" rel="noopener noreferrer" class=""><code>7715a51</code></a>)</li>
+<li class="">Fix Python SDK not sending the Authorization header, preventing authenticated requests. (<a href="https://github.com/vectorize-io/hindsight/commit/39e3f7c" target="_blank" rel="noopener noreferrer" class=""><code>39e3f7c</code></a>)</li>
+<li class="">Fix stats endpoint missing tenant authentication in multi-tenant setups. (<a href="https://github.com/vectorize-io/hindsight/commit/d6ff191" target="_blank" rel="noopener noreferrer" class=""><code>d6ff191</code></a>)</li>
+<li class="">Fix embedding dimension handling for tenant schemas in multi-tenant databases. (<a href="https://github.com/vectorize-io/hindsight/commit/6fe9314" target="_blank" rel="noopener noreferrer" class=""><code>6fe9314</code></a>)</li>
+<li class="">Fix Groq free-tier compatibility so requests work correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/d899d18" target="_blank" rel="noopener noreferrer" class=""><code>d899d18</code></a>)</li>
+<li class="">Fix security vulnerability (qs / CVE-2025-15284). (<a href="https://github.com/vectorize-io/hindsight/commit/b3becb6" target="_blank" rel="noopener noreferrer" class=""><code>b3becb6</code></a>)</li>
+<li class="">Restore MCP tools for listing and creating memory banks. (<a href="https://github.com/vectorize-io/hindsight/commit/9fd5679" target="_blank" rel="noopener noreferrer" class=""><code>9fd5679</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="020"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.2.0" target="_blank" rel="noopener noreferrer" class="">0.2.0</a><a href="#020" class="hash-link" aria-label="Direct link to 020" title="Direct link to 020" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add additional model provider support, including Anthropic Claude and LM Studio. (<a href="https://github.com/vectorize-io/hindsight/commit/787ed60" target="_blank" rel="noopener noreferrer" class=""><code>787ed60</code></a>)</li>
+<li class="">Add multi-bank access and new MCP tools for interacting with multiple memory banks via MCP. (<a href="https://github.com/vectorize-io/hindsight/commit/6b5f593" target="_blank" rel="noopener noreferrer" class=""><code>6b5f593</code></a>)</li>
+<li class="">Allow supplying custom entities when retaining memories via the retain endpoint. (<a href="https://github.com/vectorize-io/hindsight/commit/dd59bc8" target="_blank" rel="noopener noreferrer" class=""><code>dd59bc8</code></a>)</li>
+<li class="">Enhance the /reflect endpoint with max_tokens control and optional structured output responses. (<a href="https://github.com/vectorize-io/hindsight/commit/d49e820" target="_blank" rel="noopener noreferrer" class=""><code>d49e820</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improve local LLM support for reasoning-capable models and streamline Docker startup for local deployments. (<a href="https://github.com/vectorize-io/hindsight/commit/eea0f27" target="_blank" rel="noopener noreferrer" class=""><code>eea0f27</code></a>)</li>
+<li class="">Support operation validator extensions and return proper HTTP errors when validation fails. (<a href="https://github.com/vectorize-io/hindsight/commit/ce45d30" target="_blank" rel="noopener noreferrer" class=""><code>ce45d30</code></a>)</li>
+<li class="">Add configurable observation thresholds to control when observations are created/updated. (<a href="https://github.com/vectorize-io/hindsight/commit/54e2df0" target="_blank" rel="noopener noreferrer" class=""><code>54e2df0</code></a>)</li>
+<li class="">Improve graph visualization to the control plane for exploring memory relationships. (<a href="https://github.com/vectorize-io/hindsight/commit/1a62069" target="_blank" rel="noopener noreferrer" class=""><code>1a62069</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fix MCP server lifecycle handling so MCP lifespan is correctly tied to the FastAPI app lifespan. (<a href="https://github.com/vectorize-io/hindsight/commit/6b78f7d" target="_blank" rel="noopener noreferrer" class=""><code>6b78f7d</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0115"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.15" target="_blank" rel="noopener noreferrer" class="">0.1.15</a><a href="#0115" class="hash-link" aria-label="Direct link to 0115" title="Direct link to 0115" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Add the ability to delete documents from the web UI. (<a href="https://github.com/vectorize-io/hindsight/commit/f7ff32d" target="_blank" rel="noopener noreferrer" class=""><code>f7ff32d</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improve the API health check endpoint and update the generated client APIs/types accordingly. (<a href="https://github.com/vectorize-io/hindsight/commit/e06a612" target="_blank" rel="noopener noreferrer" class=""><code>e06a612</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0114"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.14" target="_blank" rel="noopener noreferrer" class="">0.1.14</a><a href="#0114" class="hash-link" aria-label="Direct link to 0114" title="Direct link to 0114" translate="no">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixes the embedded “get-skill” installer so installing skills works correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/0b352d1" target="_blank" rel="noopener noreferrer" class=""><code>0b352d1</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0113"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.13" target="_blank" rel="noopener noreferrer" class="">0.1.13</a><a href="#0113" class="hash-link" aria-label="Direct link to 0113" title="Direct link to 0113" translate="no">​</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improve reliability by surfacing task handler failures so retries can occur when processing fails. (<a href="https://github.com/vectorize-io/hindsight/commit/904ea4d" target="_blank" rel="noopener noreferrer" class=""><code>904ea4d</code></a>)</li>
+<li class="">Revamp the hindsight-embed component architecture, including a new daemon/client model and CLI updates for embedding workflows. (<a href="https://github.com/vectorize-io/hindsight/commit/e6511e7" target="_blank" rel="noopener noreferrer" class=""><code>e6511e7</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fix memory retention so timestamps are correctly taken into account. (<a href="https://github.com/vectorize-io/hindsight/commit/234d426" target="_blank" rel="noopener noreferrer" class=""><code>234d426</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0112"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.12" target="_blank" rel="noopener noreferrer" class="">0.1.12</a><a href="#0112" class="hash-link" aria-label="Direct link to 0112" title="Direct link to 0112" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added an extensions system for plugging in new operations/skills (including built-in tenant support). (<a href="https://github.com/vectorize-io/hindsight/commit/2a0c490" target="_blank" rel="noopener noreferrer" class=""><code>2a0c490</code></a>)</li>
+<li class="">Introduced the hindsight-embed tool and a native agentic skill for embedding/agent workflows. (<a href="https://github.com/vectorize-io/hindsight/commit/da44a5e" target="_blank" rel="noopener noreferrer" class=""><code>da44a5e</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved reliability when parsing LLM JSON by retrying on parse errors and adding clearer diagnostics. (<a href="https://github.com/vectorize-io/hindsight/commit/a831a7b" target="_blank" rel="noopener noreferrer" class=""><code>a831a7b</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed structured-output support for Ollama-based LLM providers. (<a href="https://github.com/vectorize-io/hindsight/commit/32bca12" target="_blank" rel="noopener noreferrer" class=""><code>32bca12</code></a>)</li>
+<li class="">Adjusted LLM validation to cap max completion tokens at 100 to prevent validation failures. (<a href="https://github.com/vectorize-io/hindsight/commit/b94b5cf" target="_blank" rel="noopener noreferrer" class=""><code>b94b5cf</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0111"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.11" target="_blank" rel="noopener noreferrer" class="">0.1.11</a><a href="#0111" class="hash-link" aria-label="Direct link to 0111" title="Direct link to 0111" translate="no">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed the standalone Docker image and control plane standalone build process so standalone deployments build correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/2948cb6" target="_blank" rel="noopener noreferrer" class=""><code>2948cb6</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="0110"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.10" target="_blank" rel="noopener noreferrer" class="">0.1.10</a><a href="#0110" class="hash-link" aria-label="Direct link to 0110" title="Direct link to 0110" translate="no">​</a></h2>
+<p><em>This release contains internal maintenance and infrastructure changes only.</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="019"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.9" target="_blank" rel="noopener noreferrer" class="">0.1.9</a><a href="#019" class="hash-link" aria-label="Direct link to 019" title="Direct link to 019" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Simplified local MCP installation and added a standalone UI option for easier setup. (<a href="https://github.com/vectorize-io/hindsight/commit/1c6acc3" target="_blank" rel="noopener noreferrer" class=""><code>1c6acc3</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed the standalone Docker image so it builds and starts reliably. (<a href="https://github.com/vectorize-io/hindsight/commit/b52eb90" target="_blank" rel="noopener noreferrer" class=""><code>b52eb90</code></a>)</li>
+<li class="">Improved Docker runtime reliability by adding required system utilities (procps). (<a href="https://github.com/vectorize-io/hindsight/commit/ae80876" target="_blank" rel="noopener noreferrer" class=""><code>ae80876</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="018"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.8" target="_blank" rel="noopener noreferrer" class="">0.1.8</a><a href="#018" class="hash-link" aria-label="Direct link to 018" title="Direct link to 018" translate="no">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fix bank list responses when a bank has no name. (<a href="https://github.com/vectorize-io/hindsight/commit/04f01ab" target="_blank" rel="noopener noreferrer" class=""><code>04f01ab</code></a>)</li>
+<li class="">Fix failures when retaining memories asynchronously. (<a href="https://github.com/vectorize-io/hindsight/commit/63f5138" target="_blank" rel="noopener noreferrer" class=""><code>63f5138</code></a>)</li>
+<li class="">Fix a race condition in the bank selector when switching banks. (<a href="https://github.com/vectorize-io/hindsight/commit/e468a4e" target="_blank" rel="noopener noreferrer" class=""><code>e468a4e</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="017"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.7" target="_blank" rel="noopener noreferrer" class="">0.1.7</a><a href="#017" class="hash-link" aria-label="Direct link to 017" title="Direct link to 017" translate="no">​</a></h2>
+<p><em>This release contains internal maintenance and infrastructure changes only.</em></p>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="016"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.6" target="_blank" rel="noopener noreferrer" class="">0.1.6</a><a href="#016" class="hash-link" aria-label="Direct link to 016" title="Direct link to 016" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added support for the Gemini 3 Pro and GPT-5.2 models. (<a href="https://github.com/vectorize-io/hindsight/commit/bb1f9cb" target="_blank" rel="noopener noreferrer" class=""><code>bb1f9cb</code></a>)</li>
+<li class="">Added a local MCP server option for running/connecting to Hindsight via MCP without a separate remote service. (<a href="https://github.com/vectorize-io/hindsight/commit/7dd6853" target="_blank" rel="noopener noreferrer" class=""><code>7dd6853</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Updated the Postgres/pg0 dependency to a newer 0.11.x series for improved compatibility and stability. (<a href="https://github.com/vectorize-io/hindsight/commit/47be07f" target="_blank" rel="noopener noreferrer" class=""><code>47be07f</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="015"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.5" target="_blank" rel="noopener noreferrer" class="">0.1.5</a><a href="#015" class="hash-link" aria-label="Direct link to 015" title="Direct link to 015" translate="no">​</a></h2>
+<p><strong>Features</strong></p>
+<ul>
+<li class="">Added LiteLLM integration so Hindsight can capture and manage memories from LiteLLM-based LLM calls. (<a href="https://github.com/vectorize-io/hindsight/commit/dfccbf2" target="_blank" rel="noopener noreferrer" class=""><code>dfccbf2</code></a>)</li>
+<li class="">Added an optional graph-based retriever (MPFP) to improve recall by leveraging relationships between memories. (<a href="https://github.com/vectorize-io/hindsight/commit/7445cef" target="_blank" rel="noopener noreferrer" class=""><code>7445cef</code></a>)</li>
+</ul>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Switched the embedded Postgres layer to pg0-embedded for a smoother local/standalone experience. (<a href="https://github.com/vectorize-io/hindsight/commit/94c2b85" target="_blank" rel="noopener noreferrer" class=""><code>94c2b85</code></a>)</li>
+</ul>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed repeated retries on 400 errors from the LLM, preventing unnecessary request loops and failures. (<a href="https://github.com/vectorize-io/hindsight/commit/70983f5" target="_blank" rel="noopener noreferrer" class=""><code>70983f5</code></a>)</li>
+<li class="">Fixed recall trace visualization in the control plane so search/recall debugging displays correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/922164e" target="_blank" rel="noopener noreferrer" class=""><code>922164e</code></a>)</li>
+<li class="">Fixed the CLI installer to make installation more reliable. (<a href="https://github.com/vectorize-io/hindsight/commit/158a6aa" target="_blank" rel="noopener noreferrer" class=""><code>158a6aa</code></a>)</li>
+<li class="">Updated Next.js to patch security vulnerabilities (CVE-2025-55184, CVE-2025-55183). (<a href="https://github.com/vectorize-io/hindsight/commit/f018cc5" target="_blank" rel="noopener noreferrer" class=""><code>f018cc5</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="013"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.3" target="_blank" rel="noopener noreferrer" class="">0.1.3</a><a href="#013" class="hash-link" aria-label="Direct link to 013" title="Direct link to 013" translate="no">​</a></h2>
+<p><strong>Improvements</strong></p>
+<ul>
+<li class="">Improved CLI and UI branding/polish, including new banner/logo assets and updated interface styling. (<a href="https://github.com/vectorize-io/hindsight/commit/fa554b8" target="_blank" rel="noopener noreferrer" class=""><code>fa554b8</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="012"><a href="https://github.com/vectorize-io/hindsight/releases/tag/v0.1.2" target="_blank" rel="noopener noreferrer" class="">0.1.2</a><a href="#012" class="hash-link" aria-label="Direct link to 012" title="Direct link to 012" translate="no">​</a></h2>
+<p><strong>Bug Fixes</strong></p>
+<ul>
+<li class="">Fixed the standalone Docker image so it builds/runs correctly. (<a href="https://github.com/vectorize-io/hindsight/commit/1056a20" target="_blank" rel="noopener noreferrer" class=""><code>1056a20</code></a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_tleR" id="integration-changelogs">Integration Changelogs<a href="#integration-changelogs" class="hash-link" aria-label="Direct link to Integration Changelogs" title="Direct link to Integration Changelogs" translate="no">​</a></h2>
+<table><thead><tr><th>Integration</th><th>Package</th><th>Description</th></tr></thead><tbody><tr><td><a class="" href="/zh-Hans/changelog/integrations/litellm">LiteLLM</a></td><td><code>hindsight-litellm</code></td><td>Universal LLM memory via LiteLLM (100+ providers)</td></tr><tr><td><a class="" href="/zh-Hans/changelog/integrations/pydantic-ai">Pydantic AI</a></td><td><code>hindsight-pydantic-ai</code></td><td>Persistent memory tools for Pydantic AI agents</td></tr><tr><td><a class="" href="/zh-Hans/changelog/integrations/crewai">CrewAI</a></td><td><code>hindsight-crewai</code></td><td>Persistent memory for CrewAI agents</td></tr><tr><td><a class="" href="/zh-Hans/changelog/integrations/ai-sdk">AI SDK</a></td><td><code>@vectorize-io/hindsight-ai-sdk</code></td><td>Memory integration for Vercel AI SDK</td></tr><tr><td><a class="" href="/zh-Hans/changelog/integrations/chat">Chat SDK</a></td><td><code>@vectorize-io/hindsight-chat</code></td><td>Memory integration for Vercel Chat SDK</td></tr><tr><td><a class="" href="/zh-Hans/changelog/integrations/openclaw">OpenClaw</a></td><td><code>@vectorize-io/hindsight-openclaw</code></td><td>Hindsight memory plugin for OpenClaw</td></tr></tbody></table></article></div></div></main></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Documentation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/">Introduction</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/developer/installation">Developer Guide</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/sdks/python">Clients &amp; Integrations</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/api-reference">API Reference</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Resources</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/cookbook">Cookbook</a></li><li class="footer__item"><a class="footer__link-item" href="/zh-Hans/changelog">Changelog</a></li><li class="footer__item"><a href="https://ui.hindsight.vectorize.io/signup" target="_blank" rel="noopener noreferrer" class="footer__link-item">Hindsight Cloud<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/vectorize-io/hindsight" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://join.slack.com/t/hindsight-space/shared_invite/zt-3nhbm4w29-LeSJ5Ixi6j8PdiYOCPlOgg" target="_blank" rel="noopener noreferrer" class="footer__link-item">Slack<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPrP"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2026 Vectorize, Inc.</div></div></div></footer></div>
+</body>
+</html>

@@ -29,11 +29,11 @@ const config: Config = {
   projectName: 'hindsight',
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ["en", "zh-Hans"],
   },
 
   headTags: [

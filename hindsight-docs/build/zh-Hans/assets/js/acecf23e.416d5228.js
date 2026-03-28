@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkhindsight_docs=globalThis.webpackChunkhindsight_docs||[]).push([[1903],{1912(s){s.exports=JSON.parse('{"blogBasePath":"/zh-Hans/blog","blogTitle":"Hindsight Blog","authorsListPath":"/zh-Hans/blog/authors"}')}}]);
